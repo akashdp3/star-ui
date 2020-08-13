@@ -5,7 +5,8 @@
   "author": "Akashdeep Samantra <akash.samantra19@gmail.com>",
   "homepage": "https://github.com/akashdsamantra/star-ui#readme",
   "license": "ISC",
-  "main": "index.ts",
+  "source": "index.ts",
+  "main": "dist/index.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
