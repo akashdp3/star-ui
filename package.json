@@ -1,6 +1,11 @@
 {
   "name": "root",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "packages/docs",
+    "packages/star-ui"
+  ],
   "devDependencies": {
     "lerna": "^3.22.1"
   }
