@@ -3,8 +3,8 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "packages/docs",
-    "packages/star-ui"
+    "packages/docs/*",
+    "packages/star-ui/*"
   ],
   "devDependencies": {
     "lerna": "^3.22.1"
