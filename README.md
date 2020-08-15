@@ -1,2 +1,2 @@
 # star-ui
-A design system 
+A component library
