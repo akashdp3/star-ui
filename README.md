@@ -1,2 +1,2 @@
 # star-ui
-A component library
+A component librar
