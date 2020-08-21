@@ -18,11 +18,9 @@
     "type": "git",
     "url": "git+https://github.com/akashdsamantra/star-ui.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
+  "scripts": {},
   "dependencies": {
-    "styled-components": "5.0.1"
+    "styled-components": "^5.0.1"
   },
   "peerDependencies": {
     "react": "^16.8.6",
