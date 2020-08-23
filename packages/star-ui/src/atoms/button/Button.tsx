@@ -7,7 +7,7 @@ interface IButtonProps {
   children: React.ReactNode;
 }
 const defaultProps = {
-  type: 'button',
+  type: 'button'
 };
 
 const Button = (props: IButtonProps) => {
