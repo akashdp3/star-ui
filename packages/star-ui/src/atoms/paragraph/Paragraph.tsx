@@ -9,7 +9,7 @@ const DefaultProps = {
   children: ''
 };
 
-const ParagraphElement = Styled.span``;
+const ParagraphElement = Styled.p``;
 
 const Paragraph = (props) => {
   const { children } = props;
