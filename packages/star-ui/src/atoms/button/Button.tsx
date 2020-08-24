@@ -1,7 +1,6 @@
 import React from 'react';
 
 type ButtonType = 'submit' | 'button' | 'reset';
-
 interface IButtonProps {
   type?: ButtonType;
   children: React.ReactNode;
