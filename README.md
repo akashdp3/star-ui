@@ -6,8 +6,8 @@ Following things are being used here:
 * css-i-js
 
 Have support for:
-[] Tailwind
-[] CSS
-[] Bootstrap
-[] Custom CSS
+-[] Tailwind
+-[] CSS
+-[] Bootstrap
+-[] Custom CSS
 
