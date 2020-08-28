@@ -1,3 +1,13 @@
 # star-ui
 A component library
-asdf
+
+Following things are being used here:
+* react
+* css-i-js
+
+Have support for:
+[] Tailwind
+[] CSS
+[] Bootstrap
+[] Custom CSS
+
