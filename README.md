@@ -6,9 +6,20 @@ Following things are being used here:
 * css-i-js
 
 Components:
-- [ ] Button
 - [ ] Text
 - [ ] Paragraph
+- [ ] Button
+- [ ] Input
+- [ ] Textarea
+- [ ] CheckBox
+- [ ] CheckBoxGroup
+- [ ] Badge
+- [ ] Radio
+- [ ] RadioGroup
+- [ ] DatePicker
+- [ ] Dropdown
+- [ ] Table
+- [ ] Select
 
 Have support for:
 - [ ] Tailwind
