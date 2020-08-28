@@ -1,9 +1,14 @@
 # star-ui
 A component library
 
-Following things are being used here:
+Following thins are being used here:
 * react
 * css-i-js
+
+Things to Build in this project:
+- [ ] Docs
+- [ ] Storybook
+- [ ] star-ui
 
 Components:
 - [ ] Text
