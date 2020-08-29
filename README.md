@@ -1,5 +1,5 @@
 # star-ui
-A component library
+A design system
 
 Following thins are being used here:
 * react
