@@ -26,7 +26,7 @@ Components:
 - [ ] Table
 - [ ] Select
 
-Have support for:
+Have support for(Optional):
 - [ ] Tailwind
 - [ ] CSS
 - [ ] Bootstrap
