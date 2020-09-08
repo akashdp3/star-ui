@@ -1,6 +1,0 @@
-{
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  "eslint.workingDirectories": ["./packages/star-ui"]
-}
