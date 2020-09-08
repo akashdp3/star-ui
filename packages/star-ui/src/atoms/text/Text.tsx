@@ -1,17 +1,22 @@
 import React from 'react';
 import Styled from 'styled-components';
 
-interface ITextProps {
-  children?: React.ReactNode;
-}
+type TextSizes = 'small' | 'normal' | 'big';
+type TextVariants = 'primary' | 'success' | 'danger' | 'warning' | 'normal';
 
+interface ITextProps {
+  size?: TextSizes;
+  variant?: TextVariants;
+  children: React.ReactNode;
+}
 const DefaultProps = {
-  children: ''
+  size: 'normal',
+  variant: 'normal'
 };
 
 const TextElement = Styled.span``;
 
-const Text = (props) => {
+const Text = (props: ITextProps) => {
   const { children } = props;
 
   return <TextElement>{children}</TextElement>;
