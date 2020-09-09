@@ -11,7 +11,7 @@ const DefaultProps = {
 
 const ParagraphElement = Styled.p``;
 
-const Paragraph = (props) => {
+const Paragraph = (props: IParagraphProps) => {
   const { children } = props;
 
   return <ParagraphElement>{children}</ParagraphElement>;
