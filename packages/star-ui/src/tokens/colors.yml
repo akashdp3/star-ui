@@ -1,17 +1,17 @@
 colors:
   primary:
     lighter: rgb(219, 235, 255) #DBEBFF - BLUE10
-    light: rgb(91, 160, 245) #5BA0F5 - BLUE40
-    base: rgb(56, 139, 242) #388BF2 - BLUE50
+    light: rgb(91, 160, 245) #5BA0F5 - BLUE40 (Pressed states & creating gradients)
+    base: rgb(56, 139, 242) #388BF2 - BLUE50 (Primary actions, buttons, links & success states)
     dark: rgb(33, 107, 196) #216BC4 - BLUE60
     darker: rgb(17, 77, 150) #114D96 - BLUE80
 
   secondary:
-    lighter: rgb(232, 232, 232) #E8E8E8 - BLACK10
-    light: rgb(202, 204, 207) #CACCCF - BLACK40
-    base: rgb(160, 164, 168) #AOA4A8 - BLACK60
-    dark: rgb(82, 87, 92) #52575C - BLACK80
-    darker: rgb(37, 40, 43) #25282B - BLACK100
+    lighter: rgb(232, 232, 232) #E8E8E8 - BLACK10 (Dividers & borders)
+    light: rgb(202, 204, 207) #CACCCF - BLACK40 (Default texts in text field, disabled states of buttons, icons & other components)
+    base: rgb(160, 164, 168) #AOA4A8 - BLACK60 (Inactive states of icons & other components)
+    dark: rgb(82, 87, 92) #52575C - BLACK80 (Body text & component description)
+    darker: rgb(37, 40, 43) #25282B - BLACK100 (Title texts, icons, captions, input fields & everywhere else where black is required)
 
   success:
     lighter: rgb(225, 247, 232) #E1F7E8 - GREEN10
@@ -24,7 +24,7 @@ colors:
     lighter: rgb(252, 227, 228) #FCE3E4 - RED10
     light: rgb(237, 100, 106) #ED646A - RED40
     base: rgb(229, 42, 52) #E52A34 - RED50
-    dark: rgb(207, 33, 42) #CF212A - RED60
+    dark: rgb(207, 33, 42) #CF212A - RED60 (All error text, negative states)
     darker: rgb(161, 19, 26) #A1131A - RED80
 
   warning:
