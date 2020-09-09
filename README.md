@@ -1,34 +1,54 @@
 # star-ui
+
 A design system
 
 Following thins are being used here:
-* react
-* css-i-js
+
+- react
+- css-in-js
 
 Things to Build in this project:
+
 - [ ] Docs
 - [ ] Storybook
-- [ ] star-ui
+- [x] star-ui
 
 Components:
-- [ ] Text
-- [ ] Paragraph
+
+- [ ] Accordion
+- [ ] Badge
+- [ ] Box
+- [ ] Breadcrumb
 - [ ] Button
-- [ ] Input
-- [ ] Textarea
+- [ ] Collapse
+- [ ] Heading
+- [ ] Menu
+- [ ] Modal
+- [ ] Skeleton
+- [ ] Tabs
 - [ ] CheckBox
 - [ ] CheckBoxGroup
-- [ ] Badge
-- [ ] Radio
-- [ ] RadioGroup
 - [ ] DatePicker
 - [ ] Dropdown
-- [ ] Table
+- [ ] Input
+- [ ] Paragraph
+- [ ] Radio
+- [ ] RadioGroup
 - [ ] Select
+- [ ] Table
+- [ ] Text
+- [ ] Textarea
+
+Structures
+
+- [ ] Flex
+- [ ] Grid
+- [ ] Stack
 
 Have support for(Optional):
+
+- [ ] Inline Styling
 - [ ] Tailwind
 - [ ] CSS
 - [ ] Bootstrap
 - [ ] Custom CSS
-
