@@ -11,7 +11,7 @@ interface IButtonProps {
   size?: ButtonSizes;
   children: React.ReactNode;
 }
-const defaultProps = {
+const DefaultProps = {
   type: 'button',
   variant: 'secondary',
   size: 'normal'
@@ -25,6 +25,6 @@ const Button = (props: IButtonProps) => {
   return <ButtonElement type={type}>{children}</ButtonElement>;
 };
 
-Button.defaultProps = defaultProps;
+Button.defaultProps = DefaultProps;
 
 export default Button;
