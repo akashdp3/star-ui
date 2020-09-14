@@ -45,6 +45,12 @@ Structures
 - [ ] Grid
 - [ ] Stack
 
+Tokens
+- [x] Colors
+- [ ] Font sizes
+- [ ] Line Heights
+- [ ] Font Weights
+
 Have support for(Optional):
 
 - [ ] Inline Styling
