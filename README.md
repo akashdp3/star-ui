@@ -19,7 +19,7 @@ Components:
 - [ ] Badge
 - [ ] Box
 - [ ] Breadcrumb
-- [ ] Button
+- [x] Button
 - [ ] CheckBox
 - [ ] CheckBoxGroup
 - [ ] Collapse
@@ -29,14 +29,14 @@ Components:
 - [ ] Input
 - [ ] Menu
 - [ ] Modal
-- [ ] Paragraph
+- [x] Paragraph
 - [ ] Radio
 - [ ] RadioGroup
 - [ ] Select
 - [ ] Skeleton
 - [ ] Table
 - [ ] Tabs
-- [ ] Text
+- [x] Text
 - [ ] Textarea
 
 Structures
