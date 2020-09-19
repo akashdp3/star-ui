@@ -1,6 +1,6 @@
 # `docs`
 
-> TODO: description
+This package is for providing documentation for star-ui
 
 ## Usage
 
