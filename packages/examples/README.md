@@ -1,6 +1,6 @@
 # `examples`
 
-> TODO: description
+This package is for creating some example project using star-ui
 
 ## Usage
 

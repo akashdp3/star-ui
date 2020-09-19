@@ -1,11 +1,3 @@
-# `star-ui`
+## star-ui
 
-> TODO: description
-
-## Usage
-
-```
-const starUi = require('star-ui');
-
-// TODO: DEMONSTRATE API
-```
+This package is for my design system.
