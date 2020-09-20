@@ -14,7 +14,11 @@ const DefaultProps = {
   variant: 'normal'
 };
 
-const TextElement = Styled.span``;
+const TextElement = Styled.span`
+  color: ${(props) => {
+    console.log(props);
+  }}
+`;
 
 const Text = (props: ITextProps) => {
   const { children } = props;
