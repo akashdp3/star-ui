@@ -1,6 +1,8 @@
 import React from 'react';
 import Styled from 'styled-components';
 
+import { getAppearance } from './button.helper';
+
 type ButtonTypes = 'submit' | 'button' | 'reset';
 type ButtonVariants = 'primary' | 'secondary' | 'success' | 'danger' | 'ghost';
 type ButtonSizes = 'small' | 'normal' | 'big';
@@ -17,12 +19,14 @@ const DefaultProps = {
   size: 'normal'
 };
 
-const ButtonElement = Styled.button``;
+const ButtonElement = Styled.button`
+  color: ${(props) => getAppearance(props.variant, props.theme).color};
+`;
 
 const Button = (props: IButtonProps) => {
-  const { type, children } = props;
+  const { children, ...others } = props;
 
-  return <ButtonElement type={type}>{children}</ButtonElement>;
+  return <ButtonElement {...others}>{children}</ButtonElement>;
 };
 
 Button.defaultProps = DefaultProps;
