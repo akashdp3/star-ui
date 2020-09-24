@@ -10,8 +10,8 @@ export default {
 
 /**
  * TODO:
- * [ ] Button variants
- * [ ] Button in disabled state
+ * [x] Button variants
+ * [x] Button in disabled state
  * [ ] Button in loading state
  */
 
@@ -27,3 +27,49 @@ export const Variants = () => {
     </Stack>
   );
 };
+
+export const Disabled = () => (
+  <Stack>
+    <Button variant="primary" isDisabled>
+      Primary
+    </Button>
+    <Button variant="secondary" isDisabled>
+      Secondary
+    </Button>
+    <Button variant="success" isDisabled>
+      Success
+    </Button>
+    <Button variant="danger" isDisabled>
+      Danger
+    </Button>
+    <Button variant="warning" isDisabled>
+      Warning
+    </Button>
+    <Button variant="ghost" isDisabled>
+      Ghost
+    </Button>
+  </Stack>
+);
+
+export const Loading = () => (
+  <Stack>
+    <Button variant="primary" isLoading>
+      Primary
+    </Button>
+    <Button variant="secondary" isLoading>
+      Secondary
+    </Button>
+    <Button variant="success" isLoading>
+      Success
+    </Button>
+    <Button variant="danger" isLoading>
+      Danger
+    </Button>
+    <Button variant="warning" isLoading>
+      Warning
+    </Button>
+    <Button variant="ghost" isLoading>
+      Ghost
+    </Button>
+  </Stack>
+);
