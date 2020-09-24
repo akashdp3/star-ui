@@ -1,28 +1,71 @@
 import React from 'react';
 import Styled from 'styled-components';
 
+import { getAppearance } from './button.helper';
+
 type ButtonTypes = 'submit' | 'button' | 'reset';
-type ButtonVariants = 'primary' | 'secondary' | 'success' | 'danger' | 'ghost';
-type ButtonSizes = 'small' | 'normal' | 'big';
+type ButtonVariants =
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'danger'
+  | 'warning'
+  | 'ghost';
+type ButtonSizes = 'xs' | 'sm' | 'md' | 'lg';
 
 interface IButtonProps {
   type?: ButtonTypes;
   variant?: ButtonVariants;
   size?: ButtonSizes;
+  isDisabled?: boolean;
+  isLoading?: boolean;
+  loadingText?: string;
   children: React.ReactNode;
 }
 const DefaultProps = {
   type: 'button',
   variant: 'secondary',
-  size: 'normal'
+  size: 'normal',
+  isDisabled: false,
+  isLoading: false,
+  loadingText: ''
 };
 
-const ButtonElement = Styled.button``;
+const ButtonElement = Styled.button`
+  cursor: pointer;
+  padding: 10px 12px;
+  border-width: 1px;
+  border-radius: 4px;
+
+  /* All Colors */
+  color: ${(props: any) => getAppearance(props).color};
+  background-color: ${(props: any) => getAppearance(props).backgroundColor};
+  border-color: ${(props: any) => getAppearance(props).borderColor};
+
+  &:hover:enabled {
+    background-color: ${(props: any) =>
+      getAppearance(props).hoverBackgroundColor};
+    border-color: ${(props: any) => getAppearance(props).hoverBorderColor};
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    box-shadow: none;
+  }
+`;
+const Spinner = Styled.span`
+  margin-right: 8px;
+`;
 
 const Button = (props: IButtonProps) => {
-  const { type, children } = props;
+  const { children, isDisabled, isLoading, loadingText, ...others } = props;
 
-  return <ButtonElement type={type}>{children}</ButtonElement>;
+  return (
+    <ButtonElement disabled={isDisabled || isLoading} {...others}>
+      {isLoading && <Spinner className="icon-16 icon-loading" />}
+      {isLoading ? loadingText : children}
+    </ButtonElement>
+  );
 };
 
 Button.defaultProps = DefaultProps;

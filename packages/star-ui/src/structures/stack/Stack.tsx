@@ -6,8 +6,8 @@ interface IStackProps {
 }
 
 const StackWrapper = Styled.div`
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const StackComponent = (props: IStackProps) => {
