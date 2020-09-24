@@ -5,7 +5,7 @@ import { getAppearance } from './button.helper';
 
 type ButtonTypes = 'submit' | 'button' | 'reset';
 type ButtonVariants = 'primary' | 'secondary' | 'success' | 'danger' | 'ghost';
-type ButtonSizes = 'small' | 'normal' | 'big';
+type ButtonSizes = 'xs' | 'sm' | 'md' | 'lg';
 
 interface IButtonProps {
   type?: ButtonTypes;
@@ -20,7 +20,21 @@ const DefaultProps = {
 };
 
 const ButtonElement = Styled.button`
-  color: ${(props) => getAppearance(props.variant, props.theme).color};
+  cursor: pointer;
+  padding: 10px 12px;
+  border-width: 1px;
+  border-radius: 4px;
+
+  /* All Colors */
+  color: ${(props: any) => getAppearance(props).color};
+  background-color: ${(props: any) => getAppearance(props).backgroundColor};
+  border-color: ${(props: any) => getAppearance(props).borderColor};
+
+  &:hover {
+    background-color: ${(props: any) =>
+      getAppearance(props).hoverBackgroundColor};
+    border-color: ${(props: any) => getAppearance(props).hoverBorderColor};
+  }
 `;
 
 const Button = (props: IButtonProps) => {
