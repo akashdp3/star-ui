@@ -10,7 +10,7 @@ Following thins are being used here:
 Things to Build in this project:
 
 - [ ] Docs
-- [ ] Storybook
+- [x] Storybook
 - [x] star-ui
 
 Components:
