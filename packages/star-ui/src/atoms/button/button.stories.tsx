@@ -10,6 +10,7 @@ export default {
 
 /**
  * TODO:
+ * Stories:
  * [x] Button variants
  * [x] Button in disabled state
  * [ ] Button in loading state
