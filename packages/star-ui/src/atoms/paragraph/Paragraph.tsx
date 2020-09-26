@@ -5,18 +5,18 @@ interface IParagraphProps {
   children?: React.ReactNode;
 }
 
-const DefaultProps = {
-  children: ''
+const defaultProps = {
+  children: null
 };
 
 const ParagraphElement = Styled.p``;
 
 const Paragraph = (props: IParagraphProps) => {
-  const { children } = props;
+  const { children, ...others } = props;
 
-  return <ParagraphElement>{children}</ParagraphElement>;
+  return <ParagraphElement {...others}>{children}</ParagraphElement>;
 };
 
-Paragraph.defaultProps = DefaultProps;
+Paragraph.defaultProps = defaultProps;
 
 export default Paragraph;
