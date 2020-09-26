@@ -5,9 +5,13 @@ type SpinnerSizes = 'sm' | 'md' | 'bg';
 
 interface ISpinnerProps {
   size?: SpinnerSizes;
+  borderColor?: string;
+  borderLeftColor?: string;
 }
 const defaultProps = {
-  size: 'md'
+  size: 'md',
+  borderColor: null,
+  borderLeftColor: null
 };
 
 const SPINNER_SIZES = {
@@ -23,7 +27,7 @@ const rotate = keyframes`
 
 const SpinnerElement = Styled.span`
   width: ${(props: any) => SPINNER_SIZES[props.size]};
-  height: 24px;
+  height: ${(props: any) => SPINNER_SIZES[props.size]};
   box-sizing: border-box;
   display: inline-block;
 
