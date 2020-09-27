@@ -52,25 +52,25 @@ export const Disabled = () => (
   </Stack>
 );
 
-export const Loading = () => (
-  <Stack>
-    <Button variant="primary" isLoading>
-      Primary
-    </Button>
-    <Button variant="secondary" isLoading>
-      Secondary
-    </Button>
-    <Button variant="success" isLoading>
-      Success
-    </Button>
-    <Button variant="danger" isLoading>
-      Danger
-    </Button>
-    <Button variant="warning" isLoading>
-      Warning
-    </Button>
-    <Button variant="ghost" isLoading>
-      Ghost
-    </Button>
-  </Stack>
-);
+// export const Loading = () => (
+//   <Stack>
+//     <Button variant="primary" isLoading>
+//       Primary
+//     </Button>
+//     <Button variant="secondary" isLoading>
+//       Secondary
+//     </Button>
+//     <Button variant="success" isLoading>
+//       Success
+//     </Button>
+//     <Button variant="danger" isLoading>
+//       Danger
+//     </Button>
+//     <Button variant="warning" isLoading>
+//       Warning
+//     </Button>
+//     <Button variant="ghost" isLoading>
+//       Ghost
+//     </Button>
+//   </Stack>
+// );

@@ -18,7 +18,6 @@ interface IButtonProps {
   variant?: ButtonVariants;
   size?: ButtonSizes;
   isDisabled?: boolean;
-  isLoading?: boolean;
   loadingText?: string;
   children: React.ReactNode;
 }
@@ -27,7 +26,6 @@ const DefaultProps = {
   variant: 'secondary',
   size: 'normal',
   isDisabled: false,
-  isLoading: false,
   loadingText: ''
 };
 
@@ -53,17 +51,13 @@ const ButtonElement = Styled.button`
     box-shadow: none;
   }
 `;
-const Spinner = Styled.span`
-  margin-right: 8px;
-`;
 
 const Button = (props: IButtonProps) => {
-  const { children, isDisabled, isLoading, loadingText, ...others } = props;
+  const { children, isDisabled, loadingText, ...others } = props;
 
   return (
-    <ButtonElement disabled={isDisabled || isLoading} {...others}>
-      {isLoading && <Spinner className="icon-16 icon-loading" />}
-      {isLoading ? loadingText : children}
+    <ButtonElement disabled={isDisabled} {...others}>
+      {children}
     </ButtonElement>
   );
 };
