@@ -13,7 +13,7 @@ export default {
  *  [x] Sample Text
  *  [ ] Text with font size props
  *  [x] Text with color props
- *  [ ] Text with elipsis (with and without width specified)
+ *  [ ] Text with ellipsis (with and without width specified)
  *  [x] Custom Styles
  */
 

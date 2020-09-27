@@ -1,7 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
 
-import Spinner from '../spinner/Spinner';
 import { getAppearance } from './button.helper';
 
 type ButtonTypes = 'submit' | 'button' | 'reset';
@@ -19,7 +18,6 @@ interface IButtonProps {
   variant?: ButtonVariants;
   size?: ButtonSizes;
   isDisabled?: boolean;
-  isLoading?: boolean;
   loadingText?: string;
   children: React.ReactNode;
 }
@@ -28,7 +26,6 @@ const DefaultProps = {
   variant: 'secondary',
   size: 'normal',
   isDisabled: false,
-  isLoading: false,
   loadingText: ''
 };
 
@@ -56,11 +53,10 @@ const ButtonElement = Styled.button`
 `;
 
 const Button = (props: IButtonProps) => {
-  const { children, isDisabled, isLoading, loadingText, ...others } = props;
+  const { children, isDisabled, loadingText, ...others } = props;
 
   return (
-    <ButtonElement disabled={isDisabled || isLoading} {...others}>
-      {isLoading && <Spinner size="sm" />}
+    <ButtonElement disabled={isDisabled} {...others}>
       {children}
     </ButtonElement>
   );
