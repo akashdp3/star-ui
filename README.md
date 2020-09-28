@@ -5,7 +5,7 @@ A design system
 Following thins are being used here:
 
 - react
-- css-in-js
+- css-in-js (styled-components v5.0.1)
 
 Things to Build in this project:
 
@@ -29,10 +29,8 @@ Components:
 - [ ] Input
 - [ ] Menu
 - [ ] Modal
-- [x] Paragraph
 - [ ] Radio
 - [ ] RadioGroup
-- [ ] Select
 - [ ] Skeleton
 - [ ] Table
 - [ ] Tabs
@@ -46,8 +44,9 @@ Structures
 - [ ] Stack
 
 Tokens
+
 - [x] Colors
-- [ ] Font sizes
+- [x] Font sizes
 - [ ] Line Heights
 - [ ] Font Weights
 
@@ -60,5 +59,5 @@ Have support for(Optional):
 - [ ] Custom CSS
 
 References:
-* [Design systems Course](https://designsystems.engineering/)
 
+- [Design systems Course](https://designsystems.engineering/)
