@@ -52,6 +52,23 @@ export const Colors = () => {
   );
 };
 
+export const Sizes = () => {
+  return (
+    <Stack direction="vertical">
+      <Text size={1}>Hello World</Text>
+      <Text size={2}>Hello World</Text>
+      <Text size={3}>Hello World</Text>
+      <Text size={4}>Hello World</Text>
+      <Text size={5}>Hello World</Text>
+      <Text size={6}>Hello World</Text>
+      <Text size={7}>Hello World</Text>
+      <Text size={8}>Hello World</Text>
+      <Text size={9}>Hello World</Text>
+      <Text size={10}>Hello World</Text>
+    </Stack>
+  );
+};
+
 export const Custom = () => {
   return (
     <Text style={{ backgroundColor: 'blue', color: 'white' }}>
