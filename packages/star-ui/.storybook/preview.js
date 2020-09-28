@@ -1,8 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import '../src/styles/styles.scss';
-
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' }
 };
@@ -51,6 +49,19 @@ const theme = {
     black: {
       base: 'rgb(37, 40, 43)'
     }
+  },
+  fontSizes: {
+    0: 0,
+    1: '10px',
+    2: '12px',
+    3: '14px',
+    4: '16px',
+    5: '20px',
+    6: '24px',
+    7: '32px',
+    8: '48px',
+    9: '64px',
+    10: '72px'
   }
 };
 

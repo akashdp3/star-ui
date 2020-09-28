@@ -1,27 +1,38 @@
 import React from 'react';
 import Styled from 'styled-components';
 
-type TextSizes = 'small' | 'normal' | 'big';
-type TextVariants = 'primary' | 'success' | 'danger' | 'warning' | 'normal';
+import { getTextColor } from './text.helper';
+
+type TextVariants =
+  | 'primary'
+  | 'success'
+  | 'danger'
+  | 'warning'
+  | 'default'
+  | 'secondary';
 
 interface ITextProps {
-  size?: TextSizes;
+  size?: number;
   variant?: TextVariants;
   children: React.ReactNode;
+  style?: object;
 }
-const DefaultProps = {
-  size: 'normal',
-  variant: 'normal'
+const defaultProps = {
+  variant: 'default',
+  style: {}
 };
 
-const TextElement = Styled.span``;
+const TextElement = Styled.span`
+  color: ${(props: any) => getTextColor(props)};
+  font-size: ${(props: any) => props.theme.fontSizes[props.size]};
+`;
 
 const Text = (props: ITextProps) => {
-  const { children } = props;
+  const { children, ...others } = props;
 
-  return <TextElement>{children}</TextElement>;
+  return <TextElement {...others}>{children}</TextElement>;
 };
 
-Text.defaultProps = DefaultProps;
+Text.defaultProps = defaultProps;
 
 export default Text;
