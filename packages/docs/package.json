@@ -11,9 +11,16 @@
     "url": "git+https://github.com/akashdsamantra/star-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "bugs": {
     "url": "https://github.com/akashdsamantra/star-ui/issues"
+  },
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
