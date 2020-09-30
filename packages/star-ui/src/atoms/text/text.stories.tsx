@@ -11,9 +11,9 @@ export default {
 /*
  *  Stories:
  *  [x] Sample Text
- *  [ ] Text with font size props
+ *  [x] Text with font size props
  *  [x] Text with color props
- *  [ ] Text with ellipsis (with and without width specified)
+ *  [x] Text with ellipsis
  *  [x] Custom Styles
  */
 

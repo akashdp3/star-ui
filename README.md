@@ -32,6 +32,7 @@ Components:
 - [ ] Radio
 - [ ] RadioGroup
 - [ ] Skeleton
+- [x] Spinner
 - [ ] Table
 - [ ] Tabs
 - [x] Text
