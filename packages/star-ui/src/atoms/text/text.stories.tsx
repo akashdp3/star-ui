@@ -79,6 +79,15 @@ export const Align = () => {
   );
 };
 
+export const Ellipsis = () => {
+  return (
+    <Text width="100px">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </Text>
+  );
+};
+
 export const Custom = () => {
   return (
     <Text style={{ backgroundColor: 'blue', color: 'white' }}>
