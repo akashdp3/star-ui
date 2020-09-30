@@ -69,6 +69,16 @@ export const Sizes = () => {
   );
 };
 
+export const Align = () => {
+  return (
+    <Stack direction="vertical">
+      <Text align="left">Left Aligned</Text>
+      <Text align="center">Center Aligned</Text>
+      <Text align="right">Right Aligned</Text>
+    </Stack>
+  );
+};
+
 export const Custom = () => {
   return (
     <Text style={{ backgroundColor: 'blue', color: 'white' }}>
