@@ -39,16 +39,8 @@ const TextElement = Styled.span`
 
 const Text = (props: ITextProps) => {
   const { children, ...others } = props;
-  let classes = '';
-  if (others.width) {
-    classes = 'ellipsis';
-  }
 
-  return (
-    <TextElement className={classes} {...others}>
-      {children}
-    </TextElement>
-  );
+  return <TextElement {...others}>{children}</TextElement>;
 };
 
 Text.defaultProps = defaultProps;
