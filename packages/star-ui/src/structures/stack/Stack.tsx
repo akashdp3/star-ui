@@ -14,21 +14,14 @@ const defaultProps = {
 const StackElement = Styled.div`
   display: flex;
   justify-content: space-between;
-  flex-direction: ${(props: { flexDirection: string }) => props.flexDirection};
+  flex-direction: ${(props: any) =>
+    props.direction === 'vertical' ? 'column' : 'row'};
 `;
 
 const StackComponent = (props: IStackProps) => {
   const { children, direction, ...others } = props;
-  let flexDirection = 'row';
-  if (direction === 'vertical') {
-    flexDirection = 'column';
-  }
 
-  return (
-    <StackElement flexDirection={flexDirection} {...others}>
-      {children}
-    </StackElement>
-  );
+  return <StackElement {...others}>{children}</StackElement>;
 };
 
 StackComponent.defaultProps = defaultProps;
