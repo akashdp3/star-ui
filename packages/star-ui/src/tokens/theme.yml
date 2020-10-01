@@ -1,0 +1,70 @@
+theme:
+  colors:
+    primary:
+      lighter: rgb(219, 235, 255) #DBEBFF - BLUE10
+      light: rgb(91, 160, 245) #5BA0F5 - BLUE40 (Pressed states & creating gradients)
+      base: rgb(56, 139, 242) #388BF2 - BLUE50 (Primary actions, buttons, links & success states)
+      dark: rgb(33, 107, 196) #216BC4 - BLUE60
+      darker: rgb(17, 77, 150) #114D96 - BLUE80
+
+    secondary:
+      lighter: rgb(232, 232, 232) #E8E8E8 - BLACK10 (Dividers & borders)
+      light: rgb(202, 204, 207) #CACCCF - BLACK40 (Default texts in text field, disabled states of buttons, icons & other components)
+      base: rgb(160, 164, 168) #AOA4A8 - BLACK60 (Inactive states of icons & other components)
+      dark: rgb(82, 87, 92) #52575C - BLACK80 (Body text & component description)
+      darker: rgb(37, 40, 43) #25282B - BLACK100 (Title texts, icons, captions, input fields & everywhere else where black is required)
+
+    success:
+      lighter: rgb(225, 247, 232) #E1F7E8 - GREEN10
+      light: rgb(81, 194, 115) #51C273 - GREEN40
+      base: rgb(49, 176, 87) #31B057 - GREEN50
+      dark: rgb(28, 148, 64) #1C9440 - GREEN60
+      darker: rgb(15, 117, 46) #0F752E - GREEN80
+
+    danger:
+      lighter: rgb(252, 227, 228) #FCE3E4 - RED10
+      light: rgb(237, 100, 106) #ED646A - RED40
+      base: rgb(229, 42, 52) #E52A34 - RED50
+      dark: rgb(207, 33, 42) #CF212A - RED60 (All error text, negative states)
+      darker: rgb(161, 19, 26) #A1131A - RED80
+
+    warning:
+      lighter: rgb(255, 240, 209) #FFF0D1 - YELLOW10
+      light: rgb(255, 192, 71) #FCC047 - YELLOW40
+      base: rgb(251, 175, 24) #FBAF18 - YELLOW50
+      dark: rgb(227, 158, 20) #E39E14 - YELLOW60
+      darker: rgb(201, 140, 16) #C98C10 - YELLOW80
+
+    white:
+      base: rgb(255, 255, 255) #FFFFFF
+
+    black:
+      base: rgb(37, 40, 43) #25282B
+
+  fontSizes:
+    0: 0
+    1: '10px'
+    2: '12px'
+    3: '14px'
+    4: '16px'
+    5: '20px'
+    6: '24px'
+    7: '32px'
+    8: '48px'
+    9: '64px'
+    10: '72px'
+
+  fontWeights:
+    thin: 100
+    light: 300
+    normal: 400
+    medium: 500
+    semiBold: 600
+    bold: 700
+    extraBold: 800
+    black: 900
+
+  lineHeights:
+    compact: '1.2'
+    default: '1.6'
+    cosy: '2'
