@@ -40,9 +40,8 @@ Components:
 
 Structures
 
-- [ ] Flex
 - [ ] Grid
-- [ ] Stack
+- [x] Stack
 
 Tokens
 
