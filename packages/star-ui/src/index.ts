@@ -1,7 +1,7 @@
 // Atoms
 export { Button } from './atoms/button';
-export { Paragraph } from './atoms/paragraph';
-export { Text } from './atoms/text';
+// export { Spinner } from './atoms/spinner';
+// export { Text } from './atoms/text';
 
-// Structures
-export { Stack } from './structures/stack';
+// // Structures
+// export { Stack } from './structures/stack';
