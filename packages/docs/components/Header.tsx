@@ -2,7 +2,12 @@ import React from 'react';
 import Styled from 'styled-components';
 
 const Wrapper = Styled.div`
-  height: 40px;
+  border-bottom: 1px solid ${(props: any) =>
+    props.theme.colors.secondary.light};
+`;
+const Logo = Styled.a`
+  font-size: 24px;
+  margin: 20px 30px;
 `;
 
 class Header extends React.Component {
@@ -14,7 +19,7 @@ class Header extends React.Component {
   render() {
     return (
       <Wrapper>
-        <p>Header</p>
+        <Logo>star</Logo>
       </Wrapper>
     );
   }
