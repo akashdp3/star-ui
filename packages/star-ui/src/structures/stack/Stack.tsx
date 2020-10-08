@@ -19,7 +19,7 @@ const StackElement = Styled.div`
 `;
 
 const StackComponent = (props: IStackProps) => {
-  const { children, direction, ...others } = props;
+  const { children, ...others } = props;
 
   return <StackElement {...others}>{children}</StackElement>;
 };
