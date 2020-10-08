@@ -16,10 +16,11 @@ const StackElement = Styled.div`
   justify-content: space-between;
   flex-direction: ${(props: any) =>
     props.direction === 'vertical' ? 'column' : 'row'};
+  gap: 8px;
 `;
 
 const StackComponent = (props: IStackProps) => {
-  const { children, direction, ...others } = props;
+  const { children, ...others } = props;
 
   return <StackElement {...others}>{children}</StackElement>;
 };
