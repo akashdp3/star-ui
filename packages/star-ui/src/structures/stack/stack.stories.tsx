@@ -19,7 +19,7 @@ export const Default = () => {
 
 export const Horizontal = () => {
   return (
-    <Stack direction="horizontal">
+    <Stack>
       <p>Element A</p>
       <p>Element B</p>
       <p>Element C</p>
