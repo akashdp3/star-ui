@@ -1,6 +1,6 @@
 // Atoms
 export { Button } from './atoms/button';
-export { Paragraph } from './atoms/paragraph';
+export { Input } from './atoms/input';
 export { Text } from './atoms/text';
 
 // Structures
