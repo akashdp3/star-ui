@@ -6,6 +6,7 @@ type StackDirections = 'horizontal' | 'vertical';
 interface IStackProps {
   direction?: StackDirections;
   children: React.ReactNode;
+  style?: object;
 }
 const defaultProps = {
   direction: 'horizontal'
