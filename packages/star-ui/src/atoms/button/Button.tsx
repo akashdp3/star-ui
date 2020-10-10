@@ -20,6 +20,7 @@ interface IButtonProps {
   isDisabled?: boolean;
   loadingText?: string;
   children: React.ReactNode;
+  style?: object;
 }
 const DefaultProps = {
   type: 'button',
