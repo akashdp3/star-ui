@@ -26,7 +26,7 @@ Components:
 - [ ] DatePicker
 - [ ] Dropdown
 - [ ] Heading
-- [ ] Input
+- [x] Input
 - [ ] Menu
 - [ ] Modal
 - [ ] Radio
@@ -36,7 +36,7 @@ Components:
 - [ ] Table
 - [ ] Tabs
 - [x] Text
-- [ ] Textarea
+- [x] Textarea
 
 Structures
 
@@ -57,7 +57,3 @@ Have support for(Optional):
 - [ ] CSS
 - [ ] Bootstrap
 - [ ] Custom CSS
-
-References:
-
-- [Design systems Course](https://designsystems.engineering/)
