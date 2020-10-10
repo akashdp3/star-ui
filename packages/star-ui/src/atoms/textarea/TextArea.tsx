@@ -21,7 +21,6 @@ const TextAreaElement = Styled.textarea`
   border-radius: 4px;
 
   &:focus {
-    outline: none;
     border-color: ${(props: any) =>
       props.isInvalid
         ? props.theme.colors.danger.base
