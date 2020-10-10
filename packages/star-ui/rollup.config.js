@@ -7,7 +7,7 @@ import typescript from 'rollup-plugin-typescript2';
 
 import pkg from './package.json';
 
-const extensions = ['.ts', '.tsx'];
+const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default [
   {
@@ -20,13 +20,10 @@ export default [
         extensions
       }),
       babel({
-        presets: [
-          ['@babel/preset-env', { modules: false }],
-          '@babel/preset-react'
-        ],
-        exclude: 'node_modules/**'
-      }),
-      commonjs()
+        presets: ['@babel/preset-typescript'],
+        extensions
+      })
+      // commonjs()
     ]
   }
 ];
