@@ -9,11 +9,11 @@ indent_style = space
 indent_size = 2
 
 
-[*.{js,txt,md,css,html,php,py,json,yml,sass,scss,pug}]
+[*.{js,ts,txt,md,css,html,php,py,json,yml,sass,scss,pug}]
 indent_style = space
 indent_size = 2
 
-[*.jsx]
+[*.{jsx, tsx}]
 indent_style = space
 indent_size = 4
 

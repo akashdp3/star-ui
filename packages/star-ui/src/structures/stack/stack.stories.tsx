@@ -16,3 +16,23 @@ export const Default = () => {
     </Stack>
   );
 };
+
+export const Horizontal = () => {
+  return (
+    <Stack>
+      <p>Element A</p>
+      <p>Element B</p>
+      <p>Element C</p>
+    </Stack>
+  );
+};
+
+export const Vertical = () => {
+  return (
+    <Stack direction="vertical">
+      <p>Element A</p>
+      <p>Element B</p>
+      <p>Element C</p>
+    </Stack>
+  );
+};

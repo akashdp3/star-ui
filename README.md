@@ -1,63 +1,33 @@
 # star-ui
 
-A design system
+This is a design system created for learning (at least for now). Feel free to raise any issue or PR.
 
-Following thins are being used here:
+## Introduction
 
-- react
-- css-in-js (styled-components v5.0.1)
+So `star-ui` is a monorepo created using `yarn workspace`. There are 3 packages:
 
-Things to Build in this project:
+1. docs
+1. examples
+1. star-ui
 
-- [ ] Docs
-- [x] Storybook
-- [x] star-ui
+- `docs` is documentation for star-ui. It should automatically create documentation from component. Possibly I can use the storybook docs addon directly. I am not sure. The idea is to generate it, not write it manually.
+- `examples` - coming soon
+- `star-ui` is the root package in the project. This will contain all components.
 
-Components:
+## Getting Started
 
-- [ ] Accordion
-- [ ] Badge
-- [ ] Box
-- [ ] Breadcrumb
-- [x] Button
-- [ ] CheckBox
-- [ ] CheckBoxGroup
-- [ ] Collapse
-- [ ] DatePicker
-- [ ] Dropdown
-- [ ] Heading
-- [ ] Input
-- [ ] Menu
-- [ ] Modal
-- [ ] Radio
-- [ ] RadioGroup
-- [ ] Skeleton
-- [x] Spinner
-- [ ] Table
-- [ ] Tabs
-- [x] Text
-- [ ] Textarea
+Clone the repo
 
-Structures
+```
+git clone git@github.com:akashdsamantra/star-ui.git
+```
 
-- [ ] Grid
-- [x] Stack
+Run the below command to run storybook server and start working:
 
-Tokens
+```
+yarn start-storybook
+```
 
-- [x] Colors
-- [x] Font sizes
-- [ ] Line Heights
-- [ ] Font Weights
+Note: I will make this repo public as soon as I deploy it somewhere.
 
-Have support for(Optional):
-
-- [ ] Inline Styling
-- [ ] Tailwind
-- [ ] CSS
-- [ ] Bootstrap
-- [ ] Custom CSS
-
-References:
-
-- [Design systems Course](https://designsystems.engineering/)
+Cheers 🍻

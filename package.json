@@ -5,8 +5,8 @@
     "start-docs": "yarn workspace docs dev",
     "build-docs": "yarn workspace docs build",
     "docs": "yarn workspace docs start",
-    "start-storybook": "yarn workspace star-ui storybook",
-    "build-star-ui": "yarn workspace star-ui build"
+    "start": "yarn workspace star-ui storybook",
+    "build": "yarn workspace star-ui build"
   },
   "workspaces": [
     "packages/*",
