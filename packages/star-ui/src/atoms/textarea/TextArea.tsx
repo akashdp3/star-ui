@@ -13,7 +13,7 @@ const defaultProps = {
 
 const TextAreaElement = Styled.textarea`
   width: 100%;
-  padding: 8px 16px;
+  padding: 8px;
   border: 1px solid ${(props: any) =>
     props.isInvalid
       ? props.theme.colors.danger.base

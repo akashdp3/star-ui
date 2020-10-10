@@ -14,7 +14,7 @@ const defaultProps = {
 
 const InputElement = Styled.input`
   width: 100%;
-  padding: 0 16px;
+  padding: 0 8px;
   height: 32px;
   border: 1px solid ${(props: any) =>
     props.isInvalid
