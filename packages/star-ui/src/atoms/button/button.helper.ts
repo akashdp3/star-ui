@@ -7,7 +7,12 @@ const VARIANTS = {
   GHOST: 'ghost'
 };
 
-export const getAppearance = ({ variant, theme }) => {
+interface IButton {
+  variant: string;
+  theme: { colors: any };
+}
+
+export const getAppearance = ({ variant, theme }: IButton) => {
   const { colors } = theme;
   switch (variant) {
     case VARIANTS.PRIMARY:
