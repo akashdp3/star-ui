@@ -1,4 +1,9 @@
-export const getTextColor = ({ variant, theme }) => {
+interface ITextAppearance {
+  variant: string;
+  theme: { colors: any };
+}
+
+export const getTextColor = ({ variant, theme }: ITextAppearance) => {
   const { colors } = theme;
 
   switch (variant) {

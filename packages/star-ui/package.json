@@ -22,7 +22,8 @@
     "lint": "eslint src --ext .tsx --ext .ts",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -30,9 +31,12 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.5",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.12.1",
     "@rollup/plugin-typescript": "^6.0.0",
     "@storybook/addon-actions": "^6.0.16",
     "@storybook/addon-essentials": "^6.0.16",
@@ -67,6 +71,6 @@
     "rollup-plugin-typescript2": "^0.27.3",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   }
 }
