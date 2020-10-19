@@ -17,7 +17,7 @@ const BadgeElement = Styled.span`
   border-radius: 2px 4px;
 `;
 
-const Badge = (props) => {
+const Badge = (props: IBadgeProps) => {
   const { children, ...others } = props;
 
   return <BadgeElement {...others}>{children}</BadgeElement>;
