@@ -14,7 +14,10 @@ const defaultProps = {
   borderLeftColor: null
 };
 
-const SPINNER_SIZES = {
+interface ISpinnerSizes {
+  [key: string]: string;
+}
+const SPINNER_SIZES: ISpinnerSizes = {
   sm: '16px',
   md: '24px',
   bg: '32px'
