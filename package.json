@@ -13,9 +13,6 @@
     "packages/docs/*",
     "packages/star-ui/*"
   ],
-  "devDependencies": {
-    "lerna": "^3.22.1"
-  },
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:akashdsamantra/star-ui.git",
