@@ -4,8 +4,8 @@ import Spinner from './Spinner';
 import { Stack } from '../../structures/stack';
 
 export default {
-  title: 'Spinner',
-  component: Spinner
+    title: 'Spinner',
+    component: Spinner
 };
 
 /**
@@ -17,19 +17,19 @@ export default {
  */
 
 export const Default = () => {
-  return <Spinner />;
+    return <Spinner />;
 };
 
 export const Sizes = () => {
-  return (
-    <Stack>
-      <Spinner size="sm" />
-      <Spinner size="md" />
-      <Spinner size="bg" />
-    </Stack>
-  );
+    return (
+        <Stack>
+            <Spinner size="sm" />
+            <Spinner size="md" />
+            <Spinner size="bg" />
+        </Stack>
+    );
 };
 
 export const Custom = () => {
-  return <Spinner borderColor="lightgreen" borderLeftColor="darkgreen" />;
+    return <Spinner borderColor="lightgreen" borderLeftColor="darkgreen" />;
 };
