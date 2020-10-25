@@ -4,26 +4,26 @@ import Styled from 'styled-components';
 import { getTextColor } from './text.helper';
 
 type TextVariants =
-  | 'primary'
-  | 'success'
-  | 'danger'
-  | 'warning'
-  | 'default'
-  | 'secondary';
+    | 'primary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'default'
+    | 'secondary';
 type TextAligns = 'left' | 'center' | 'right';
 
 interface ITextProps {
-  align?: TextAligns;
-  size?: number;
-  variant?: TextVariants;
-  width?: string;
-  children: React.ReactNode;
-  style?: object;
+    align?: TextAligns;
+    size?: number;
+    variant?: TextVariants;
+    width?: string;
+    children: React.ReactNode;
+    style?: object;
 }
 const defaultProps = {
-  align: 'left',
-  variant: 'default',
-  style: {}
+    align: 'left',
+    variant: 'default',
+    style: {}
 };
 
 const TextElement = Styled.span`
@@ -38,11 +38,10 @@ const TextElement = Styled.span`
 `;
 
 const Text = (props: ITextProps) => {
-  const { children, ...others } = props;
+    const { children, ...others } = props;
 
-  return <TextElement {...others}>{children}</TextElement>;
+    return <TextElement {...others}>{children}</TextElement>;
 };
 
 Text.defaultProps = defaultProps;
-
 export default Text;
