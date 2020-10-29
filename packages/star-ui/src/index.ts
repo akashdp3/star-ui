@@ -1,6 +1,7 @@
 // Atoms
 export { Badge } from './atoms/badge';
 export { Button } from './atoms/button';
+export { Card } from './atoms/card';
 export { Input } from './atoms/input';
 // export { Spinner } from './atoms/spinner';
 export { Text } from './atoms/text';
