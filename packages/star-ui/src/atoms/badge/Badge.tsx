@@ -10,11 +10,11 @@ const defaultProps = {};
 
 const BadgeElement = Styled.span`
   font-size: ${(props: any) => props.theme.fontSizes[props.size]};
-  padding: 4px;
+  padding: 2px 4px;
   background-color: ${(props: any) =>
       props.backgroundColor || props.theme.colors.secondary.lighter};
   color: ${(props: any) => props.color || props.theme.colors.secondary.darker};
-  border-radius: 2px 4px;
+  border-radius: 4px;
 `;
 
 const Badge = (props: IBadgeProps) => {
