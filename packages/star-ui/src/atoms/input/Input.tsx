@@ -2,14 +2,14 @@ import React from 'react';
 import Styled from 'styled-components';
 
 interface IInputProps {
-  placeholder?: string;
-  type?: string;
-  disabled?: boolean;
-  isInvalid?: boolean;
+    placeholder?: string;
+    type?: string;
+    disabled?: boolean;
+    isInvalid?: boolean;
 }
 const defaultProps = {
-  disabled: false,
-  isInvalid: false
+    disabled: false,
+    isInvalid: false
 };
 
 const InputElement = Styled.input`
@@ -17,16 +17,17 @@ const InputElement = Styled.input`
   padding: 0 8px;
   height: 32px;
   border: 1px solid ${(props: any) =>
-    props.isInvalid
-      ? props.theme.colors.danger.base
-      : props.theme.colors.secondary.base};
+      props.isInvalid
+          ? props.theme.colors.danger.base
+          : props.theme.colors.secondary.base};
   border-radius: 4px;
+  outline: none;
 
   &:focus {
     border-color: ${(props: any) =>
-      props.isInvalid
-        ? props.theme.colors.danger.base
-        : props.theme.colors.primary.dark};
+        props.isInvalid
+            ? props.theme.colors.danger.base
+            : props.theme.colors.primary.dark};
   }
 
   &:disabled {
@@ -37,7 +38,7 @@ const InputElement = Styled.input`
 `;
 
 const Input = (props: IInputProps) => {
-  return <InputElement {...props} />;
+    return <InputElement {...props} />;
 };
 
 Input.defaultProps = defaultProps;
