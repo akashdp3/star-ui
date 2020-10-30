@@ -16,8 +16,8 @@ Things to Build in this project:
 Components:
 
 - [ ] Accordion
-- [ ] Badge
-- [ ] Box
+- [x] Badge
+- [x] Box
 - [ ] Breadcrumb
 - [x] Button
 - [ ] CheckBox
@@ -25,7 +25,7 @@ Components:
 - [ ] Collapse
 - [ ] DatePicker
 - [ ] Dropdown
-- [ ] Heading
+- [x] Heading
 - [x] Input
 - [ ] Menu
 - [ ] Modal
