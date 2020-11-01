@@ -28,6 +28,4 @@ Run the below command to run storybook server and start working:
 yarn start-storybook
 ```
 
-Note: I will make this repo public as soon as I deploy it somewhere.
-
 Cheers 🍻
