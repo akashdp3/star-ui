@@ -23,7 +23,7 @@ const InputElement = Styled.input`
   border-radius: 4px;
   outline: none;
 
-  &:focus {
+  &:focus:not(:disabled), &:hover:not(:disabled) {
     border-color: ${(props: any) =>
         props.isInvalid
             ? props.theme.colors.danger.base
