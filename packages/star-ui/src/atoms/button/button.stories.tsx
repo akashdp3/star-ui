@@ -4,8 +4,8 @@ import Button from './Button';
 import Stack from '../../structures/stack/Stack';
 
 export default {
-  title: 'Button',
-  component: Button
+    title: 'Button',
+    component: Button
 };
 
 /**
@@ -17,39 +17,39 @@ export default {
  */
 
 export const Variants = () => {
-  return (
-    <Stack>
-      <Button variant="primary">Primary</Button>
-      <Button variant="secondary">Secondary</Button>
-      <Button variant="success">Success</Button>
-      <Button variant="danger">Danger</Button>
-      <Button variant="warning">Danger</Button>
-      <Button variant="ghost">Ghost</Button>
-    </Stack>
-  );
+    return (
+        <Stack>
+            <Button variant="primary">Primary</Button>
+            <Button variant="secondary">Secondary</Button>
+            <Button variant="success">Success</Button>
+            <Button variant="danger">Danger</Button>
+            <Button variant="warning">Warning</Button>
+            <Button variant="ghost">Ghost</Button>
+        </Stack>
+    );
 };
 
 export const Disabled = () => (
-  <Stack>
-    <Button variant="primary" isDisabled>
-      Primary
-    </Button>
-    <Button variant="secondary" isDisabled>
-      Secondary
-    </Button>
-    <Button variant="success" isDisabled>
-      Success
-    </Button>
-    <Button variant="danger" isDisabled>
-      Danger
-    </Button>
-    <Button variant="warning" isDisabled>
-      Warning
-    </Button>
-    <Button variant="ghost" isDisabled>
-      Ghost
-    </Button>
-  </Stack>
+    <Stack>
+        <Button variant="primary" isDisabled>
+            Primary
+        </Button>
+        <Button variant="secondary" isDisabled>
+            Secondary
+        </Button>
+        <Button variant="success" isDisabled>
+            Success
+        </Button>
+        <Button variant="danger" isDisabled>
+            Danger
+        </Button>
+        <Button variant="warning" isDisabled>
+            Warning
+        </Button>
+        <Button variant="ghost" isDisabled>
+            Ghost
+        </Button>
+    </Stack>
 );
 
 // export const Loading = () => (

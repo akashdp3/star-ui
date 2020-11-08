@@ -1,11 +1,4 @@
-const VARIANTS = {
-  PRIMARY: 'primary',
-  SECONDARY: 'secondary',
-  SUCCESS: 'success',
-  DANGER: 'danger',
-  WARNING: 'warning',
-  GHOST: 'ghost'
-};
+import { VARIANTS } from '../../tokens/constants';
 
 interface IButton {
   variant: string;
