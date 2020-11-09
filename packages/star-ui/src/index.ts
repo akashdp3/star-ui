@@ -1,11 +1,14 @@
 // Atoms
 export { Badge } from './atoms/badge';
 export { Button } from './atoms/button';
-export { Card } from './atoms/card';
+export { Heading } from './atoms/heading';
 export { Input } from './atoms/input';
 // export { Spinner } from './atoms/spinner';
 export { Text } from './atoms/text';
 export { TextArea } from './atoms/textarea';
 
-// // Structures
+// Molecules
+export { Card } from './molecules/card';
+
+// Structures
 export { Stack } from './structures/stack';
