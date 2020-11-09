@@ -9,7 +9,6 @@ export default {
 };
 
 /**
- * TODO:
  * Stories:
  * [x] Default spinner
  * [x] Spinner with different sizes

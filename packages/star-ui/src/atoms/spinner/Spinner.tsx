@@ -5,6 +5,7 @@ type SpinnerSizes = 'sm' | 'md' | 'bg';
 
 interface ISpinnerProps {
     size?: SpinnerSizes;
+    customSize?: string;
     borderColor?: string;
     borderLeftColor?: string;
 }
@@ -29,8 +30,8 @@ const rotate = keyframes`
 `;
 
 const SpinnerElement = Styled.span`
-  width: ${(props: any) => SPINNER_SIZES[props.size]};
-  height: ${(props: any) => SPINNER_SIZES[props.size]};
+  width: ${(props: any) => props.customSize || SPINNER_SIZES[props.size]};
+  height: ${(props: any) => props.customSize || SPINNER_SIZES[props.size]};
   box-sizing: border-box;
   display: inline-block;
 
