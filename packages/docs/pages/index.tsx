@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import Header from '../components/Header';
+import Home from '../pages/home/Home.page';
 
 const theme = {
     colors: {
@@ -65,7 +65,7 @@ const theme = {
 const HomePage = () => {
     return (
         <ThemeProvider theme={theme}>
-            <Header />
+            <Home />
         </ThemeProvider>
     );
 };

@@ -1,28 +1,18 @@
 import React from 'react';
-import Styled from 'styled-components';
 
-const Wrapper = Styled.div`
-  border-bottom: 1px solid ${(props: any) =>
-      props.theme.colors.secondary.light};
-`;
-const Logo = Styled.a`
-  font-size: 24px;
-  margin: 20px 30px;
-`;
+import NavBar from './NavBar';
 
-class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
-    render() {
-        return (
-            <Wrapper>
-                <Logo>star</Logo>
-            </Wrapper>
-        );
-    }
+interface IHeaderProps {
+    theme: 'light' | 'dark';
+    toggleTheme: Function;
 }
+
+const Header = (props: IHeaderProps) => {
+    return (
+        <div>
+            <NavBar {...props} />
+        </div>
+    );
+};
 
 export default Header;
