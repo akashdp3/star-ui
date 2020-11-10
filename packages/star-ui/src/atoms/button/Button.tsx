@@ -1,7 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
 
-import { Spinner } from '../spinner';
+// import { Spinner } from '../spinner';
 import { getAppearance } from './button.helper';
 
 type ButtonTypes = 'submit' | 'button' | 'reset';
@@ -61,15 +61,15 @@ const SpinnerWrapper = Styled.div`
 `;
 
 const Button = (props: IButtonProps) => {
-    const { children, isDisabled, isLoading, ...others } = props;
+    const { children, isDisabled, ...others } = props;
 
     return (
         <ButtonElement disabled={isDisabled} {...others}>
-            {isLoading && (
+            {/* {isLoading && (
                 <SpinnerWrapper>
                     <Spinner customSize="14px" />
                 </SpinnerWrapper>
-            )}
+            )} */}
             {children}
         </ButtonElement>
     );
