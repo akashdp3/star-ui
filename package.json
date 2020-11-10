@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "@akashdsamantra/star-ui",
   "private": true,
   "scripts": {
     "start-docs": "yarn workspace docs dev",
@@ -13,9 +13,12 @@
     "packages/docs/*",
     "packages/star-ui/*"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:akashdsamantra/star-ui.git",
+  "main": "dist/index.js",
+  "repository": "https://github.com/akashdsamantra/star-ui.git",
   "author": "Akashdeep Samantra <akash.samantra19@gmail.com>",
   "license": "MIT"
 }

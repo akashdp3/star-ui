@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@akashdsamantra/star-ui@^1.0.0":
+  version "1.0.0"
+  resolved "https://npm.pkg.github.com/download/@akashdsamantra/star-ui/1.0.0/2efc306c0f7378cf3c8524ec40cf465b0e53879e0ff2bcbb41cd00f1a6483407#2ce190e0cb9bc6fcc889c906163d8e40c8fe3f39"
+  integrity sha512-zbO8FMNB9qDgbp6H3B5FuMizy7T/+9cwv7uWgMf7i+cyCoY+KfAdKS8QIYeEoJ1xrhL3zot7gORvb1QZG1g7NQ==
+
 "@ampproject/toolbox-core@^2.6.0":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-core/-/toolbox-core-2.6.1.tgz#af97ec253bf39e5fe5121b8ec28f1f35d1878446"
