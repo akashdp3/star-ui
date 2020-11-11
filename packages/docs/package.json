@@ -19,7 +19,7 @@
     "url": "https://github.com/akashdsamantra/star-ui/issues"
   },
   "dependencies": {
-    "@akashdsamantra/star-ui": "1.0.0-alpha.1",
+    "@akashdsamantra/star-ui": "^1.0.0-alpha.1",
     "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
