@@ -1,6 +1,8 @@
 # star-ui
 
-This is a design system created for learning (at least for now). Feel free to raise any issue or PR.
+![CI](https://github.com/akashdsamantra/star-ui/workflows/CI/badge.svg?branch=main)
+
+This is a design system. Feel free to raise any issue or PR.
 
 ## Introduction
 
@@ -14,6 +16,17 @@ So `star-ui` is a monorepo created using `yarn workspace`. There are 3 packages:
 - `examples` - coming soon
 - `star-ui` is the root package in the project. This will contain all components.
 
+## Installation
+using npm 
+```
+npm install @akashdsamantra/star-ui
+```
+
+or yarn
+```
+yarn add @akashdsamantra/star-ui
+```
+
 ## Getting Started
 
 Clone the repo
@@ -25,7 +38,13 @@ git clone git@github.com:akashdsamantra/star-ui.git
 Run the below command to run storybook server and start working:
 
 ```
-yarn start-storybook
+yarn start
+```
+
+To run docs:
+
+```
+yarn start-docs
 ```
 
 Cheers 🍻
