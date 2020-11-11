@@ -34,6 +34,10 @@ Clone the repo
 ```
 git clone git@github.com:akashdsamantra/star-ui.git
 ```
+After that, run the below command in the root directory to install all dependencies across all packages
+```
+yarn install
+```
 
 Run the below command to run storybook server and start working:
 
