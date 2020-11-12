@@ -18,10 +18,16 @@ export default {
  *  [x] Custom Styles
  */
 
+/**
+ * Default Input
+ */
 export const Sample = () => {
     return <Text>Sample Text</Text>;
 };
 
+/**
+ * Text with different colors
+ */
 export const Colors = () => {
     return (
         <Stack direction="vertical">
@@ -53,6 +59,9 @@ export const Colors = () => {
     );
 };
 
+/**
+ * Text with different font sizes
+ */
 export const Sizes = () => {
     return (
         <Stack direction="vertical">
@@ -70,6 +79,9 @@ export const Sizes = () => {
     );
 };
 
+/**
+ * Text with different alignments
+ */
 export const Align = () => {
     return (
         <Stack direction="vertical">
@@ -80,6 +92,9 @@ export const Align = () => {
     );
 };
 
+/**
+ * Text with ellipsis
+ */
 export const Ellipsis = () => {
     return (
         <Text width="100px">
@@ -89,6 +104,9 @@ export const Ellipsis = () => {
     );
 };
 
+/**
+ * Custom text
+ */
 export const Custom = () => {
     return (
         <Text style={{ backgroundColor: 'blue', color: 'white' }}>

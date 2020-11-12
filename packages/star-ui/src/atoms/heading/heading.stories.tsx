@@ -8,10 +8,16 @@ export default {
     component: Heading
 };
 
+/**
+ * Default heading
+ */
 export const Default = () => {
     return <Heading>Default</Heading>;
 };
 
+/**
+ * All headings
+ */
 export const AllHeadings = () => {
     return (
         <Stack direction="vertical">

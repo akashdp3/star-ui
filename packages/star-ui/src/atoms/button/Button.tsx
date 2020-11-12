@@ -12,31 +12,37 @@ type ButtonVariants =
     | 'danger'
     | 'warning'
     | 'ghost';
-type ButtonSizes = 'xs' | 'sm' | 'md' | 'lg';
 
 interface IButtonProps {
-    type?: ButtonTypes;
-    variant?: ButtonVariants;
-    size?: ButtonSizes;
-    isDisabled?: boolean;
-    loadingText?: string;
+    /* children: Preferred string type */
     children: React.ReactNode;
-    style?: object;
-    isLoading: boolean;
+    /* type: options('button', 'submit', 'reset') */
+    type?: ButtonTypes;
+    /* variant: Checkout button helper to get different css for each variant */
+    variant?: ButtonVariants;
+    /* disabled: Boolean value to mark a button disabled */
+    disabled?: boolean;
+    /* loading: show loader when there is a operation going on */
+    loading?: boolean;
 }
 const DefaultProps = {
     type: 'button',
     variant: 'secondary',
     size: 'normal',
-    isDisabled: false,
-    isLoading: false
+    disabled: false,
+    loading: false
 };
 
 const ButtonElement = Styled.button`
+    /* Make all items in children align in one line */
     display: inline-flex;
+    /* Show pointer hover since button is a clickable item */
     cursor: pointer;
+    /* Default padding */
     padding: 10px 12px;
+    /* Default fontSize, only one fontsize is supported for now */
     font-size: 14px;
+    /* Border properties */
     border-width: 1px;
     border-radius: 4px;
 
@@ -61,11 +67,11 @@ const SpinnerWrapper = Styled.div`
 `;
 
 const Button = (props: IButtonProps) => {
-    const { children, isDisabled, ...others } = props;
+    const { children, disabled, ...others } = props;
 
     return (
-        <ButtonElement disabled={isDisabled} {...others}>
-            {/* {isLoading && (
+        <ButtonElement disabled={disabled} {...others}>
+            {/* {loading && (
                 <SpinnerWrapper>
                     <Spinner customSize="14px" />
                 </SpinnerWrapper>

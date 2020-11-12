@@ -1,12 +1,16 @@
 import React from 'react';
 import Styled, { keyframes } from 'styled-components';
 
-type SpinnerSizes = 'sm' | 'md' | 'bg';
+type SpinnerSizes = 'sm' | 'md' | 'lg';
 
 interface ISpinnerProps {
+    /* Different sizes for spinner: 'sm': small, 'md': medium, 'lg': large*/
     size?: SpinnerSizes;
+    /* customSize if any. It is given priority over size */
     customSize?: string;
+    /* Custom border color */
     borderColor?: string;
+    /* Custom border left color */
     borderLeftColor?: string;
 }
 const defaultProps = {
@@ -24,24 +28,34 @@ const SPINNER_SIZES: ISpinnerSizes = {
     bg: '32px'
 };
 
+/**
+ * Animation for spinner
+ */
 const rotate = keyframes`
    0% { transform: rotate(0deg) }
   100% { transform: rotate(1turn) }
 `;
 
 const SpinnerElement = Styled.span`
-  width: ${(props: any) => props.customSize || SPINNER_SIZES[props.size]};
-  height: ${(props: any) => props.customSize || SPINNER_SIZES[props.size]};
-  box-sizing: border-box;
-  display: inline-block;
+    /* Spinner width: Assign custom size if any, otherwise assign from defined sizes */
+    width: ${(props: any) => props.customSize || SPINNER_SIZES[props.size]};
+    /* Spinner height: Assign custom size if any, otherwise assign from defined sizes */
+    height: ${(props: any) => props.customSize || SPINNER_SIZES[props.size]};
+    box-sizing: border-box;
+    display: inline-block;
 
-  border: 2px solid;
-  border-color: ${(props: any) =>
-      props.borderColor || props.theme.colors.secondary.light};
-  border-left-color: ${(props: any) =>
-      props.borderLeftColor || props.theme.colors.secondary.dark};
-  border-radius: 50%;
-  animation: 0.8s infinite ${rotate};
+    /* Set solid border with width 2px */
+    border: 2px solid;
+    /* Assign custom border color, otherwise assign secondary light from theme */
+    border-color: ${(props: any) =>
+        props.borderColor || props.theme.colors.secondary.light};
+    /* Assign custom border left color, otherwise assign secondary dark from theme */
+    border-left-color: ${(props: any) =>
+        props.borderLeftColor || props.theme.colors.secondary.dark};
+    /* Set border radius to 50% to make it a circle */
+    border-radius: 50%;
+    /* Spinner animation */
+    animation: 0.8s infinite ${rotate};
 `;
 
 const Spinner = (props: ISpinnerProps) => {
