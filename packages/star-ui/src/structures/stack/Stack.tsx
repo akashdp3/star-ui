@@ -4,9 +4,10 @@ import Styled from 'styled-components';
 type StackDirections = 'horizontal' | 'vertical';
 
 interface IStackProps {
+    /* direction: stack direction('vertical', 'horizontal') */
     direction?: StackDirections;
+    /* children: can be anything */
     children: React.ReactNode;
-    style?: object;
 }
 const defaultProps = {
     direction: 'horizontal'
@@ -27,5 +28,4 @@ const StackComponent = (props: IStackProps) => {
 };
 
 StackComponent.defaultProps = defaultProps;
-
 export default StackComponent;

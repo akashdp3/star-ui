@@ -8,10 +8,16 @@ export default {
     component: Badge
 };
 
+/**
+ * Default badge
+ */
 export const Default = () => {
     return <Badge>Default</Badge>;
 };
 
+/**
+ * Badge with different variants
+ */
 export const Variants = () => (
     <Stack>
         <Badge variant="primary">Primary</Badge>
@@ -22,6 +28,9 @@ export const Variants = () => (
     </Stack>
 );
 
+/**
+ * Custom badge with backgroundColor and color passed specifically
+ */
 export const Custom = () => {
     return (
         <Badge backgroundColor="lightGreen" color="green">

@@ -13,11 +13,17 @@ type TextVariants =
 type TextAligns = 'left' | 'center' | 'right';
 
 interface ITextProps {
+    /* align: Text alignments('left', 'right', 'center') */
     align?: TextAligns;
+    /* size: Font size */
     size?: number;
+    /* variant: Text colors */
     variant?: TextVariants;
+    /* width: to be specified for ellipsis */
     width?: string;
+    /* children: preferred string type */
     children: React.ReactNode;
+    /* style: custom style if any */
     style?: object;
 }
 const defaultProps = {

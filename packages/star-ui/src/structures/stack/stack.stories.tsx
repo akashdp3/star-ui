@@ -7,6 +7,9 @@ export default {
     component: Stack
 };
 
+/**
+ * Default stack
+ */
 export const Default = () => {
     return (
         <Stack>
@@ -17,6 +20,9 @@ export const Default = () => {
     );
 };
 
+/**
+ * Stack with horizontal direction
+ */
 export const Horizontal = () => {
     return (
         <Stack>
@@ -27,6 +33,9 @@ export const Horizontal = () => {
     );
 };
 
+/**
+ * Stack with vertical direction
+ */
 export const Vertical = () => {
     return (
         <Stack direction="vertical">

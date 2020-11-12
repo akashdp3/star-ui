@@ -15,6 +15,9 @@ export default {
  * [x] Button in loading state
  */
 
+/**
+ * Buttons with different variants
+ */
 export const Variants = () => {
     return (
         <Stack>
@@ -28,47 +31,53 @@ export const Variants = () => {
     );
 };
 
+/**
+ * Buttons with different variants in disabled state
+ */
 export const Disabled = () => (
     <Stack>
-        <Button variant="primary" isDisabled>
+        <Button variant="primary" disabled>
             Primary
         </Button>
-        <Button variant="secondary" isDisabled>
+        <Button variant="secondary" disabled>
             Secondary
         </Button>
-        <Button variant="success" isDisabled>
+        <Button variant="success" disabled>
             Success
         </Button>
-        <Button variant="danger" isDisabled>
+        <Button variant="danger" disabled>
             Danger
         </Button>
-        <Button variant="warning" isDisabled>
+        <Button variant="warning" disabled>
             Warning
         </Button>
-        <Button variant="ghost" isDisabled>
+        <Button variant="ghost" disabled>
             Ghost
         </Button>
     </Stack>
 );
 
+/**
+ * Buttons with different variant in loading and disabled state
+ */
 export const Loading = () => (
     <Stack>
-        <Button variant="primary" isLoading isDisabled>
+        <Button variant="primary" loading disabled>
             Primary
         </Button>
-        <Button variant="secondary" isLoading isDisabled>
+        <Button variant="secondary" loading disabled>
             Secondary
         </Button>
-        <Button variant="success" isLoading isDisabled>
+        <Button variant="success" loading disabled>
             Success
         </Button>
-        <Button variant="danger" isLoading isDisabled>
+        <Button variant="danger" loading disabled>
             Danger
         </Button>
-        <Button variant="warning" isLoading isDisabled>
+        <Button variant="warning" loading disabled>
             Warning
         </Button>
-        <Button variant="ghost" isLoading isDisabled>
+        <Button variant="ghost" loading disabled>
             Ghost
         </Button>
     </Stack>

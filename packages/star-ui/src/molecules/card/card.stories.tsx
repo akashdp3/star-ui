@@ -9,9 +9,12 @@ export default {
 
 /**
  * Stories
- * [ ] Card with shadow-box
+ * [x] Card with shadow-box
  */
 
+/**
+ * Default Card
+ */
 export const Default = () => {
     return (
         <Card>

@@ -6,11 +6,15 @@ import { getAppearance } from './badge.helper';
 type BadgeVariants = 'primary' | 'secondary' | 'success' | 'danger' | 'warning';
 
 interface IBadgeProps {
+    /* children: preferred string type */
     children: React.ReactNode;
+    /* size: Custom font size */
     size?: number;
-    style?: object;
+    /* color: Custom text color */
     color?: string;
+    /* backgroundColor: Custom background color */
     backgroundColor?: string;
+    /* variant: Different variant can have different styles */
     variant?: BadgeVariants;
 }
 const defaultProps = {
