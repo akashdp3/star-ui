@@ -23,14 +23,14 @@ const InputElement = Styled.input`
     padding: 0 8px;
     /* Default input height */
     height: 32px;
-    /* Solid border with width 1px. Set color to danger when invalid
-     */
+    /* Solid border with width 1px. Set color to danger when invalid */
     border: 1px solid ${(props: any) =>
         props.invalid
             ? props.theme.colors.danger.base
             : props.theme.colors.secondary.base};
-  border-radius: 4px;
-  outline: none;
+    border-radius: 4px;
+    // TODO: Find out following's impact on accessibility
+    outline: none;
 
   &:focus:not(:disabled), &:hover:not(:disabled) {
     border-color: ${(props: any) =>
