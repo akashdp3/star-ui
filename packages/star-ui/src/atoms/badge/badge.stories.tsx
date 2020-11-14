@@ -1,4 +1,5 @@
 import React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
 import Badge from './Badge';
 import Stack from '../../structures/stack/Stack';
@@ -6,7 +7,7 @@ import Stack from '../../structures/stack/Stack';
 export default {
     title: 'Badge',
     component: Badge
-};
+} as Meta;
 
 /**
  * Default badge

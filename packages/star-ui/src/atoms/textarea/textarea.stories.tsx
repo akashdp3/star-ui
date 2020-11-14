@@ -1,4 +1,5 @@
 import React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
 import TextArea from './TextArea';
 import { Stack } from '../..';
@@ -6,14 +7,14 @@ import { Stack } from '../..';
 export default {
     title: 'TextArea',
     component: TextArea
-};
+} as Meta;
 
 /**
  * Default textarea
  */
 export const Default = () => {
     return (
-        <Stack style={{ width: '98%' }}>
+        <Stack>
             <TextArea placeholder="Sample TextArea" />
         </Stack>
     );
@@ -24,7 +25,7 @@ export const Default = () => {
  */
 export const Variants = () => {
     return (
-        <Stack direction="vertical" style={{ width: '98%' }}>
+        <Stack direction="vertical">
             <TextArea placeholder="Normal TextArea" />
             <TextArea placeholder="Disabled TextArea" disabled />
             <TextArea placeholder="Invalid TextArea" invalid />
