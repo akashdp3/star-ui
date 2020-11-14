@@ -1,4 +1,5 @@
 import React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
 import Button from './Button';
 import Stack from '../../structures/stack/Stack';
@@ -6,7 +7,7 @@ import Stack from '../../structures/stack/Stack';
 export default {
     title: 'Button',
     component: Button
-};
+} as Meta;
 
 /**
  * Stories:

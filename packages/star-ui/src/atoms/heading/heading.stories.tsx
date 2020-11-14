@@ -1,4 +1,5 @@
 import React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
 import Heading from './Heading';
 import { Stack } from '../../index';
@@ -6,7 +7,7 @@ import { Stack } from '../../index';
 export default {
     title: 'Heading',
     component: Heading
-};
+} as Meta;
 
 /**
  * Default heading

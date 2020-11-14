@@ -1,4 +1,5 @@
 import React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
 import Spinner from './Spinner';
 import { Stack } from '../../structures/stack';
@@ -6,7 +7,7 @@ import { Stack } from '../../structures/stack';
 export default {
     title: 'Spinner',
     component: Spinner
-};
+} as Meta;
 
 /**
  * Stories:
@@ -24,7 +25,7 @@ export const Sizes = () => {
         <Stack>
             <Spinner size="sm" />
             <Spinner size="md" />
-            <Spinner size="bg" />
+            <Spinner size="lg" />
         </Stack>
     );
 };

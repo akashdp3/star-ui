@@ -1,4 +1,5 @@
 import React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
 import Stack from '../../structures/stack/Stack';
 import Text from './Text';
@@ -6,7 +7,7 @@ import Text from './Text';
 export default {
     title: 'Text',
     component: Text
-};
+} as Meta;
 
 /*
  *  Stories:

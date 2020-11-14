@@ -1,11 +1,12 @@
 import React from 'react';
+import { Meta } from '@storybook/react/types-6-0';
 
 import Stack from './Stack';
 
 export default {
     title: 'Stack',
     component: Stack
-};
+} as Meta;
 
 /**
  * Default stack
