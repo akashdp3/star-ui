@@ -1,20 +1,21 @@
 {
-  "name": "@akashdsamantra/star-ui",
+  "name": "star-ui",
   "version": "1.0.0-alpha.1",
   "private": true,
   "scripts": {
     "start-docs": "yarn workspace docs dev",
     "build-docs": "yarn workspace docs build",
     "docs": "yarn workspace docs start",
-    "start": "yarn workspace star-ui storybook",
-    "build": "yarn workspace star-ui build"
+    "start": "yarn workspace react-star-ui storybook",
+    "build": "yarn workspace react-star-ui build",
+    "build:storybook": "yarn workspace react-star-ui build-storybook"
   },
   "workspaces": [
-    "packages/*",
-    "packages/docs/*",
-    "packages/star-ui/*"
+    "packages/*"
   ],
-  "main": "dist/index.js",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
   "repository": "https://github.com/akashdsamantra/star-ui.git",
   "author": "Akashdeep Samantra <akash.samantra19@gmail.com>",
   "license": "MIT"
