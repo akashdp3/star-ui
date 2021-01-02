@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import * as React from 'react';
 import Styled from 'styled-components';
 
 interface ICardProps {

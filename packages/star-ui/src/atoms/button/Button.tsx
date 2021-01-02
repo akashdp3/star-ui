@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Styled from 'styled-components';
 
 import { getAppearance } from './button.helper';

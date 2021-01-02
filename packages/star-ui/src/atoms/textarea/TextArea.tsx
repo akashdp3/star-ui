@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Styled from 'styled-components';
 
 interface ITextAreaProps {
@@ -9,7 +9,7 @@ interface ITextAreaProps {
     /* invalid: flag to mark text area as error field */
     invalid?: boolean;
 }
-const defaultProps = {
+const DefaultProps = {
     disabled: false,
     isInvalid: false
 };
@@ -46,4 +46,5 @@ const TextArea = (props: ITextAreaProps) => {
     return <TextAreaElement {...props} />;
 };
 
+TextArea.defaultProps = DefaultProps;
 export default TextArea;

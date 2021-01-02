@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Styled, { keyframes } from 'styled-components';
 
 type SpinnerSizes = 'sm' | 'md' | 'lg';
