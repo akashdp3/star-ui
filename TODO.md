@@ -47,13 +47,13 @@ Tokens
 
 - [x] Colors
 - [x] Font sizes
-- [ ] Line Heights
-- [ ] Font Weights
+- [x] Line Heights
+- [x] Font Weights
 
 Have support for(Optional):
 
-- [ ] Inline Styling
+- [x] Inline Styling
 - [ ] Tailwind
 - [ ] CSS
 - [ ] Bootstrap
-- [ ] Custom CSS
+- [x] Custom CSS
