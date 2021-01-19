@@ -4,6 +4,7 @@ export { Button } from './atoms/button';
 export { Heading } from './atoms/heading';
 export { Input } from './atoms/input';
 // export { Spinner } from './atoms/spinner';
+export { Skeleton } from "./atoms/skeleton";
 export { Text } from './atoms/text';
 export { TextArea } from './atoms/textarea';
 
