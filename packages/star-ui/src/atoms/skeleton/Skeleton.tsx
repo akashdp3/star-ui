@@ -40,7 +40,7 @@ const StyledSkeleton = Styled.div`
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     border-radius: ${(props: any) => props.borderRadius || '2px'};
-    background-image: linear-gradient(90deg, rgb(209, 217, 224) 0%, rgb(209, 217, 224) 20%, rgb(245, 250, 255) 50%, rgb(209, 217, 224) 80%, rgb(209, 217, 224) 100%);
+    background-image: linear-gradient(90deg, lightGrey 0%, lightGrey 20%, transparent 50%, lightGrey 80%, lightGrey 100%);
     background-position-x: 0%;
     background-position-y: 0%;
     background-size: 200% 200%;
