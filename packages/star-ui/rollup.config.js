@@ -12,7 +12,7 @@ export default [
     input: pkg.source,
     output: [{ file: pkg.main, format: 'cjs' }],
     exclude: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
-    external: ['styled-components', 'react'],
+    external: ['styled-components', 'react', 'react-dom'],
     plugins: [
       typescript(),
       resolve({
