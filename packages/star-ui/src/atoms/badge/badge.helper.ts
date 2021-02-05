@@ -33,6 +33,11 @@ export const getAppearance = ({ variant, theme }: IBadge) => {
       appearance.bgColor = colors.danger.base;
       break;
 
+    case VARIANTS.WARNING:
+      appearance.color = colors.white.base;
+      appearance.bgColor = colors.warning.base;
+      break;
+
     default:
       appearance.color = colors.secondary.dark;
       appearance.bgColor = colors.secondary.lighter;
