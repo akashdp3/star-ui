@@ -19,13 +19,9 @@ interface ISkeletonItem {
     /* Repeat count for skeleton. Default: 1 */
     repeatCount?: Number;
 }
-interface ISkeleton {
-    /* children: prefer string type */
-    children?: React.ReactNode;
-    /* config: Configuration for skeeton */
+interface ISkeleton extends ISkeletonItem {
+    /* config: Configuration for skeleton */
     config?: Array<ISkeletonItem>;
-    /* isLoading: if true, show skeleton. Otherwise return children */
-    isLoading?: Boolean;
 }
 const SKELETON_ITEM_DEFAULT_PROPS = {
     isLoading: true,

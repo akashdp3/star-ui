@@ -22,7 +22,7 @@ export const Behavior = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 500);
   });
 
   return (
