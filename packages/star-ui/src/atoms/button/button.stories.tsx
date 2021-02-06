@@ -83,3 +83,11 @@ export const Loading = () => (
         </Button>
     </Stack>
 );
+
+export const Sizes = () => (
+    <Stack style={{ alignItems: "center" }}>
+        <Button variant="primary" size="small">Primary</Button>
+        <Button variant="primary">Primary</Button>
+        <Button variant="primary" size="large">Primary</Button>
+    </Stack>
+)

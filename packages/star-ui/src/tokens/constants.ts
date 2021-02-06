@@ -6,3 +6,9 @@ export const VARIANTS = {
   WARNING: 'warning',
   GHOST: 'ghost'
 };
+
+export const SIZES = {
+  SMALL: 'small',
+  NORMAL: 'normal',
+  LARGE: 'large'
+};

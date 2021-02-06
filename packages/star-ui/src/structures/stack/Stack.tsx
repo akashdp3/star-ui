@@ -15,7 +15,6 @@ const defaultProps = {
 
 const StackElement = Styled.div`
   display: flex;
-  justify-content: space-between;
   flex-direction: ${(props: any) =>
       props.direction === 'vertical' ? 'column' : 'row'};
   gap: 8px;

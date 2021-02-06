@@ -1,8 +1,14 @@
-import { VARIANTS } from '../../tokens/constants';
+import { VARIANTS, SIZES } from '../../tokens/constants';
+import { IColor } from '../../tokens/types';
 
 interface IButton {
   variant: string;
-  theme: { colors: any };
+  size: string;
+  theme: {
+    colors: { [key: string]: IColor };
+    spaces: { [key: number]: string };
+    fontSizes: { [key: number]: string };
+  };
 }
 
 export const getAppearance = ({ variant, theme }: IButton) => {
@@ -69,6 +75,31 @@ export const getAppearance = ({ variant, theme }: IButton) => {
         borderColor: colors.primary.base,
         hoverBackgroundColor: colors.primary.lighter,
         hoverBorderColor: colors.primary.lighter
+      };
+  }
+};
+
+export const getSizes = ({ size, theme }: IButton) => {
+  const { spaces, fontSizes } = theme;
+
+  switch (size) {
+    case SIZES.SMALL:
+      return {
+        padding: `${spaces[2]} ${spaces[3]}`,
+        fontSize: fontSizes[2]
+      };
+
+    case SIZES.NORMAL:
+    default:
+      return {
+        padding: `${spaces[2]} ${spaces[3]}`,
+        fontSize: fontSizes[4]
+      };
+
+    case SIZES.LARGE:
+      return {
+        padding: `${spaces[3]} ${spaces[4]}`,
+        fontSize: fontSizes[4]
       };
   }
 };

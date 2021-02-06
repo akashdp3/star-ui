@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Styled from 'styled-components';
 
-import { getAppearance } from './button.helper';
+import { getAppearance, getSizes } from './button.helper';
 
 type ButtonTypes = 'submit' | 'button' | 'reset';
 type ButtonVariants =
@@ -11,6 +11,7 @@ type ButtonVariants =
     | 'danger'
     | 'warning'
     | 'ghost';
+type ButtonSizes = 'small' | 'normal' | 'big';
 
 interface IButtonProps {
     /* children: Preferred string type */
@@ -38,9 +39,9 @@ const ButtonElement = Styled.button`
     /* Show pointer hover since button is a clickable item */
     cursor: pointer;
     /* Default padding */
-    padding: 10px 12px;
+    padding: ${(props: any) => getSizes(props).padding};
     /* Default fontSize, only one fontsize is supported for now */
-    font-size: 14px;
+    font-size: ${(props: any) => getSizes(props).fontSize};
     /* Border properties */
     border-width: 1px;
     border-radius: 4px;
