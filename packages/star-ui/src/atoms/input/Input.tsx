@@ -29,7 +29,6 @@ const InputElement = Styled.input`
             ? props.theme.colors.danger.base
             : props.theme.colors.secondary.base};
     border-radius: 4px;
-    // TODO: Find out following's impact on accessibility
     outline: none;
 
   &:focus:not(:disabled), &:hover:not(:disabled) {
