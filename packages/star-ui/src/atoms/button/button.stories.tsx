@@ -86,7 +86,7 @@ export const Disabled = () => (
 
 export const Sizes = () => (
     <Stack direction="vertical">
-        <Stack style={{ alignItems: 'center' }}>
+        <Stack align="center">
             <Button variant="primary" size="small">
                 Button
             </Button>
@@ -95,7 +95,7 @@ export const Sizes = () => (
                 Button
             </Button>
         </Stack>
-        <Stack style={{ alignItems: 'center' }}>
+        <Stack align="center">
             <Button variant="secondary" size="small">
                 Button
             </Button>
@@ -104,7 +104,7 @@ export const Sizes = () => (
                 Button
             </Button>
         </Stack>
-        <Stack style={{ alignItems: 'center' }}>
+        <Stack align="center">
             <Button variant="success" size="small">
                 Button
             </Button>
@@ -113,7 +113,7 @@ export const Sizes = () => (
                 Button
             </Button>
         </Stack>
-        <Stack style={{ alignItems: 'center' }}>
+        <Stack align="center">
             <Button variant="danger" size="small">
                 Button
             </Button>
@@ -122,7 +122,7 @@ export const Sizes = () => (
                 Button
             </Button>
         </Stack>
-        <Stack style={{ alignItems: 'center' }}>
+        <Stack align="center">
             <Button variant="ghost" size="small">
                 Button
             </Button>
