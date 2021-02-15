@@ -98,7 +98,7 @@ export const getSizes = ({ size, theme }: IButton) => {
 
     case SIZES.LARGE:
       return {
-        padding: `${spaces[3]} ${spaces[4]}`,
+        padding: `${spaces[2]} ${spaces[3]}`,
         fontSize: fontSizes[5]
       };
   }
