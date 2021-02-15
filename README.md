@@ -1,6 +1,6 @@
 # star-ui (wip)
 
-![CI](https://github.com/akashdsamantra/star-ui/workflows/CI/badge.svg?branch=main)
+[//]: # "![CI](https://github.com/akashdsamantra/star-ui/workflows/CI/badge.svg?branch=main)"
 
 This is a design system. Feel free to raise any issue or PR.
 
