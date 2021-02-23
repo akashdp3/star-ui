@@ -17,10 +17,6 @@ parserOptions:
 plugins:
   - react
   - '@typescript-eslint'
-setting:
-  import/resolver:
-    node:
-      extensions: ['.js', '.jsx', '.ts', '.tsx']
 rules:
   {
     'react/jsx-filename-extension': [1, { 'extensions': ['.tsx', '.jsx'] }],

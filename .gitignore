@@ -1,8 +1,8 @@
-# editor
+# Editor
+.idea
 .vscode
 
-# generated / build files
-.next
+# Project
 node_modules
 dist
 storybook-static

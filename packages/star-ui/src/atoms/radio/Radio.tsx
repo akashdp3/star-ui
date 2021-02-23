@@ -2,8 +2,11 @@ import React from 'react';
 import Styled from 'styled-components';
 
 interface IRadioProps {
+    /* label: label string for radio button. Default: "" */
     label?: string;
+    /* disabled: Radio button state. Default: false */
     disabled?: boolean;
+    /* checked: Radio button checked state. Default: false */
     checked?: boolean;
 }
 const DEFAULT_PROPS = {
@@ -17,8 +20,6 @@ const StyledRadioContainer = Styled.label`
     display: grid;
     grid-template-columns: max-content auto;
     padding-left: 25px;
-    margin-bottom: 12px;
-    user-select: none;
     font-size: 14px;
     cursor: ${(props: any) => (props.disabled ? 'not-allowed' : 'pointer')};
 
@@ -29,7 +30,7 @@ const StyledRadioContainer = Styled.label`
 
     /* When the radio is checked, add a primary background */
     input:checked ~ .checkmark {
-        background-color: ${(props: any) => props.theme.colors.white};
+        background-color: ${(props: any) => props.theme.colors.white.base};
         border-color: ${(props: any) => props.theme.colors.primary.base};
     }
 
@@ -47,15 +48,19 @@ const StyledRadioContainer = Styled.label`
         background: ${(props: any) => props.theme.colors.primary.base};
         border-radius: 50%;
     }
+    .default-radio-input {
+        display: none;
+    }
+    .radio-label {
+        ${(props: any) =>
+            props.disabled &&
+            `
+            color: ${props.theme.colors.secondary.light};
+        `}
+        padding-top: 2px;
+    }
 `;
-const StyledRadio = Styled.input`
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-`;
-const StyledRadioSpan = Styled.span`
+const CustomRadioButton = Styled.span`
     /* Create a custom radio */
     position: absolute;
     top: 1px;
@@ -72,24 +77,20 @@ const StyledRadioSpan = Styled.span`
         display: none;
     }
 `;
-const StyledRadioValue = Styled.span`
-    color: ${(props: any) =>
-        props.disabled && props.theme.colors.secondary.light};
-    padding-top: 2px;
-`;
 
 const RadioComponent = (props: IRadioProps) => {
     const { disabled, label, ...others } = props;
 
     return (
         <StyledRadioContainer disabled={disabled}>
-            <StyledRadioValue disabled={disabled}>{label}</StyledRadioValue>
-            <StyledRadio
+            <span className="radio-label">{label}</span>
+            <input
+                className="default-radio-input"
                 type="radio"
                 disabled={disabled}
                 {...others}
             />
-            <StyledRadioSpan className="checkmark" />
+            <CustomRadioButton className="checkmark" />
         </StyledRadioContainer>
     );
 };
