@@ -24,6 +24,8 @@ interface IButtonProps {
     disabled?: boolean;
     /* loading: show loader when there is a operation going on */
     loading?: boolean;
+    /* size: button sizes */
+    size?: ButtonSizes;
 }
 const DefaultProps = {
     type: 'button',
@@ -74,5 +76,4 @@ const Button = (props: IButtonProps) => {
 };
 
 Button.defaultProps = DefaultProps;
-
 export default Button;

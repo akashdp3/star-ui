@@ -59,6 +59,7 @@ const SpinnerElement = Styled.span`
 `;
 
 const Spinner = (props: ISpinnerProps) => {
+    // @ts-ignore TODO: Fix this
     return <SpinnerElement {...props} />;
 };
 

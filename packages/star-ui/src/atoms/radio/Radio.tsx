@@ -82,6 +82,7 @@ const RadioComponent = (props: IRadioProps) => {
     const { disabled, label, ...others } = props;
 
     return (
+        // @ts-ignore
         <StyledRadioContainer disabled={disabled}>
             <span className="radio-label">{label}</span>
             <input
