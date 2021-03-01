@@ -17,12 +17,12 @@ So `star-ui` is a monorepo created using `yarn workspace`. There are 3 packages:
 ## Installation
 using npm 
 ```
-npm install @akashdsamantra/star-ui
+npm install react-star-ui
 ```
 
 or yarn
 ```
-yarn add @akashdsamantra/star-ui
+yarn add react-star-ui
 ```
 
 ## Getting Started
@@ -43,10 +43,5 @@ Run the below command to run storybook server and start working:
 yarn start
 ```
 
-To run docs:
-
-```
-yarn start-docs
-```
 
 Cheers 🍻
