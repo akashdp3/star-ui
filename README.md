@@ -1,4 +1,4 @@
-# star-ui (wip)
+# star-ui
 
 [//]: # "![CI](https://github.com/akashdsamantra/star-ui/workflows/CI/badge.svg?branch=main)"
 
