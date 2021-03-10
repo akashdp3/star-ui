@@ -11,8 +11,8 @@ export default {
 
 /**
  * Stories:
- * [ ] Sample radio button
- * [ ] Radio button with all states: default, selected, disabled
+ * [x] Sample radio button
+ * [x] Radio button with all states: default, selected, disabled
  * [ ] Radio Group
  */
 
@@ -28,7 +28,7 @@ export const Sample = () => <Radio label="Sample Radio Button" />;
  * 3. Disabled
  */
 export const AllStates = () => (
-    <Stack direction='vertical'>
+    <Stack direction="vertical">
         <Radio label="Default State" />
         <Radio label="Selected State" checked />
         <Radio label="Disabled State" disabled />
