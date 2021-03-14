@@ -11,7 +11,7 @@ type ButtonVariants =
     | 'danger'
     | 'warning'
     | 'ghost';
-type ButtonSizes = 'small' | 'normal' | 'big';
+type ButtonSizes = 'small' | 'normal' | 'large';
 
 interface IButtonProps {
     /* children: Preferred string type */
