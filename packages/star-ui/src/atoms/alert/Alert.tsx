@@ -15,6 +15,7 @@ const DEFAULT_PROPS = {
 const Element = Styled.div`
     padding: 12px;
     border-radius: 2px;
+    line-height: 1;
 
     color: ${(props: any) => getAppearance(props).color};
     background-color: ${(props: any) => getAppearance(props).backgroundColor};
