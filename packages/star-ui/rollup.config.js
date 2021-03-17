@@ -1,4 +1,3 @@
-// Ref: https://gist.github.com/kamleshchandnani/36118e0cbd7a4af2dd4029e4fa60a66a
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript2';

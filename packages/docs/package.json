@@ -1,0 +1,26 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "Documentation for star-ui",
+  "author": "Akashdeep Samantra <akash.samantra19@gmail.com>",
+  "homepage": "https://github.com/akashdsamantra/star-ui#readme",
+  "license": "ISC",
+  "main": "lib/docs.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashdsamantra/star-ui.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "bugs": {
+    "url": "https://github.com/akashdsamantra/star-ui/issues"
+  },
+  "dependencies": {
+    "next": "^10.0.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

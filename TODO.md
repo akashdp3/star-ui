@@ -20,7 +20,7 @@ Components:
 - [x] Box
 - [ ] Breadcrumb
 - [x] Button
-- [ ] CheckBox
+- [x] CheckBox
 - [ ] CheckBoxGroup
 - [ ] Collapse
 - [ ] DatePicker
@@ -29,9 +29,9 @@ Components:
 - [x] Input
 - [ ] Menu
 - [ ] Modal
-- [ ] Radio
+- [x] Radio
 - [ ] RadioGroup
-- [ ] Skeleton
+- [x] Skeleton
 - [x] Spinner
 - [ ] Table
 - [ ] Tabs
@@ -40,7 +40,7 @@ Components:
 
 Structures
 
-- [ ] Grid
+- [x] Grid
 - [x] Stack
 
 Tokens
