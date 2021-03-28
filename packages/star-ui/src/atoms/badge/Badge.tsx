@@ -25,7 +25,7 @@ const BadgeElement = Styled.span`
   font-size: ${(props: any) => props.theme.fontSizes[props.size]};
   padding: 2px 4px;
   background-color: ${(props: any) =>
-      props.backgroundColor || getAppearance(props).bgColor};
+      props.backgroundColor || getAppearance(props).backgroundColor};
   color: ${(props: any) => props.color || getAppearance(props).color};
   border-radius: 4px;
 `;

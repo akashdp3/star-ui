@@ -17,8 +17,8 @@ const Element = Styled.div`
     border-radius: 2px;
     line-height: 1;
 
-    color: ${(props: any) => getAppearance(props).color};
-    background-color: ${(props: any) => getAppearance(props).backgroundColor};
+    color: ${(props) => getAppearance(props).color};
+    background-color: ${(props) => getAppearance(props).backgroundColor};
 `;
 
 const Alert = (props: IAlertProps) => {

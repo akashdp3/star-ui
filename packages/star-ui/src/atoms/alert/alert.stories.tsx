@@ -11,8 +11,8 @@ export default {
 
 /**
  * Stories:
- * 1. Default Alert
- * 2. All states - Error, Success, Warning, Info
+ * [x] Default Alert
+ * [x] All states - Error, Success, Warning, Info
  */
 
 /**

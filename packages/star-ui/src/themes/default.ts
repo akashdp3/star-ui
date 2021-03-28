@@ -1,4 +1,6 @@
-export const theme = {
+import { DefaultTheme } from 'styled-components';
+
+const theme: DefaultTheme = {
   colors: {
     primary: {
       lighter: 'rgb(219, 235, 255)',
@@ -43,7 +45,7 @@ export const theme = {
     }
   },
   fontSizes: {
-    0: 0,
+    0: '0',
     1: '10px',
     2: '12px',
     3: '14px',
@@ -56,7 +58,7 @@ export const theme = {
     10: '72px'
   },
   spaces: {
-    0: 0,
+    0: '0',
     1: '4px',
     2: '8px',
     3: '12px',
@@ -75,3 +77,5 @@ export const theme = {
     16: '64px'
   }
 };
+
+export { theme };

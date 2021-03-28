@@ -9,38 +9,38 @@ export const getAppearance = ({ variant, theme }: IBadge) => {
   const { colors } = theme;
   let appearance = {
     color: '',
-    bgColor: ''
+    backgroundColor: ''
   };
 
   switch (variant) {
     case VARIANTS.PRIMARY:
       appearance.color = colors.white.base;
-      appearance.bgColor = colors.primary.base;
+      appearance.backgroundColor = colors.primary.base;
       break;
 
     case VARIANTS.SECONDARY:
       appearance.color = colors.secondary.dark;
-      appearance.bgColor = colors.secondary.lighter;
+      appearance.backgroundColor = colors.secondary.lighter;
       break;
 
     case VARIANTS.SUCCESS:
       appearance.color = colors.white.base;
-      appearance.bgColor = colors.success.base;
+      appearance.backgroundColor = colors.success.base;
       break;
 
     case VARIANTS.DANGER:
       appearance.color = colors.white.base;
-      appearance.bgColor = colors.danger.base;
+      appearance.backgroundColor = colors.danger.base;
       break;
 
     case VARIANTS.WARNING:
       appearance.color = colors.white.base;
-      appearance.bgColor = colors.warning.base;
+      appearance.backgroundColor = colors.warning.base;
       break;
 
     default:
       appearance.color = colors.secondary.dark;
-      appearance.bgColor = colors.secondary.lighter;
+      appearance.backgroundColor = colors.secondary.lighter;
       break;
   }
 
