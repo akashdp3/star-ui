@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 
-const theme: DefaultTheme = {
+const tokens = {
   colors: {
     primary: {
       lighter: 'rgb(219, 235, 255)',
@@ -78,4 +78,38 @@ const theme: DefaultTheme = {
   }
 };
 
-export { theme };
+/**
+ * Components
+ */
+const components = {
+  Alert: {
+    padding: '12px',
+    borderRadius: '2px',
+    lineHeight: '1',
+    variants: {
+      error: {
+        color: tokens.colors.danger.dark,
+        backgroundColor: tokens.colors.danger.lighter
+      },
+      warning: {
+        color: tokens.colors.warning.dark,
+        backgroundColor: tokens.colors.warning.lighter
+      },
+      success: {
+        color: tokens.colors.success.dark,
+        backgroundColor: tokens.colors.success.lighter
+      },
+      info: {
+        color: tokens.colors.primary.dark,
+        backgroundColor: tokens.colors.primary.lighter
+      }
+    }
+  }
+};
+
+const theme: DefaultTheme = {
+  tokens,
+  components
+};
+
+export default { tokens, components };

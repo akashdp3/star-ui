@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Meta } from '@storybook/react/types-6-0';
 
 import Input from './Input';
-import { Stack } from '../..';
+import { Stack } from '../../../index';
 
 export default {
     title: 'Input',

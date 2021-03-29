@@ -1,4 +1,4 @@
-import { VARIANTS } from '../../tokens/constants';
+import { VARIANTS } from '../../../tokens/constants';
 
 interface IBadge {
   variant: string;
@@ -6,7 +6,9 @@ interface IBadge {
 }
 
 export const getAppearance = ({ variant, theme }: IBadge) => {
-  const { colors } = theme;
+  const {
+    tokens: { colors }
+  } = theme;
   let appearance = {
     color: '',
     backgroundColor: ''

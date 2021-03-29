@@ -1,5 +1,5 @@
-import { VARIANTS, SIZES } from '../../tokens/constants';
-import { IColor } from '../../tokens/types';
+import { VARIANTS, SIZES } from '../../../tokens/constants';
+import { IColor } from '../../../tokens/types';
 
 interface IButton {
   variant: string;
