@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Styled from 'styled-components';
+
+import { Element } from '../../../primitives';
 
 type HeadingTypes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 interface IHeadingProps {
@@ -13,9 +14,7 @@ const defaultProps = {
 };
 
 const Heading = (props: IHeadingProps) => {
-    const { children, as: Element = 'h1', ...others } = props;
-
-    return <Element>{children}</Element>;
+    return <Element component="Heading" {...props} />;
 };
 
 Heading.defaultProps = defaultProps;

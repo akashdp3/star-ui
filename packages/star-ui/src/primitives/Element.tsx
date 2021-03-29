@@ -6,8 +6,9 @@ interface IElementProps {
     component: string;
     as?: string;
     variant?: string;
+    size?: string;
     children?: React.ReactNode;
-    css?: { [key: string]: string };
+    css?: any;
     theme?: DefaultTheme;
 }
 
@@ -18,6 +19,7 @@ const Element = (props: IElementProps) => {
         css = {},
         component,
         variant,
+        size,
         children
     } = props;
 
@@ -29,6 +31,7 @@ const Element = (props: IElementProps) => {
     let componentStyles = {};
     if (theme.components[component]) {
         componentStyles = { ...theme.components[component] };
+        // Different Variant styles
         if (
             variant &&
             theme.components[component].variants &&
@@ -39,8 +42,19 @@ const Element = (props: IElementProps) => {
                 theme.components[component].variants[variant]
             );
         }
+
+        // Different Size styles
+        if (
+            size &&
+            theme.components[component].sizes &&
+            theme.components[component].sizes[size]
+        ) {
+            componentStyles = merge(
+                componentStyles,
+                theme.components[component].sizes[size]
+            );
+        }
     }
-    console.log({ componentStyles });
 
     const element = () => React.createElement(tag, null, children);
     const StyledElement = Styled(element)({

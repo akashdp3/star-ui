@@ -130,7 +130,115 @@ const components = {
         backgroundColor: tokens.colors.warning.base
       }
     }
-  }
+  },
+  Button: {
+    display: 'inline-flex',
+    cursor: 'pointer',
+    borderWidth: '1px',
+    borderRadius: '4px',
+    sizes: {
+      small: {
+        paddingBlock: tokens.spaces[2],
+        paddingInline: tokens.spaces[3],
+        fontSize: tokens.fontSizes[2]
+      },
+      medium: {
+        paddingBlock: tokens.spaces[2],
+        paddingInline: tokens.spaces[3],
+        fontSize: tokens.fontSizes[4]
+      },
+      large: {
+        paddingBlock: tokens.spaces[2],
+        paddingInline: tokens.spaces[3],
+        fontSize: tokens.fontSizes[5]
+      }
+    },
+    variants: {
+      primary: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.primary.base,
+        borderColor: tokens.colors.primary.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.primary.dark,
+          borderColor: tokens.colors.primary.dark
+        }
+      },
+      secondary: {
+        color: tokens.colors.primary.base,
+        backgroundColor: tokens.colors.white.base,
+        borderColor: tokens.colors.primary.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.primary.lighter,
+          borderColor: tokens.colors.primary.base
+        }
+      },
+      success: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.success.base,
+        borderColor: tokens.colors.success.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.success.dark,
+          borderColor: tokens.colors.success.dark
+        }
+      },
+      danger: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.danger.base,
+        borderColor: tokens.colors.danger.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.danger.dark,
+          borderColor: tokens.colors.danger.dark
+        }
+      },
+      warning: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.warning.base,
+        borderColor: tokens.colors.warning.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.warning.dark,
+          borderColor: tokens.colors.warning.dark
+        }
+      },
+      ghost: {
+        color: tokens.colors.primary.base,
+        backgroundColor: 'transparent',
+        borderColor: 'transparent',
+        ':hover:enabled': {
+          backgroundColor: 'transparent',
+          borderColor: 'transparent'
+        }
+      }
+    }
+  },
+  Heading: {},
+  Input: {
+    width: '100%',
+    padding: '0 8px',
+    height: '32px',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: tokens.colors.secondary.base,
+    borderRadius: '4px',
+    ':disabled': {
+      cursor: 'not-allowed',
+      opacity: '0.4',
+      boxShadow: 'none'
+    },
+    '&[aria-invalid="true"]': {
+      borderColor: tokens.colors.danger.base
+    }
+  },
+  Skeleton: {
+    animationDuration: '1200ms',
+    animationIterationCount: 'infinite',
+    animationTimingFunction: 'linear',
+    backgroundImage:
+      'linear-gradient(90deg, rgb(221, 221, 221, 0.6) 0%, rgb(221, 221, 221, 0.6) 20%, transparent 50%, rgb(221, 221, 221, 0.6) 80%, rgb(221, 221, 221, 0.6) 100%)',
+    backgroundPositionX: '0%',
+    backgroundPositionY: '0%',
+    backgroundSize: '200% 200%'
+  },
+  Text: {}
 };
 
 const theme: DefaultTheme = {
@@ -138,4 +246,4 @@ const theme: DefaultTheme = {
   components
 };
 
-export default { tokens, components };
+export default theme;

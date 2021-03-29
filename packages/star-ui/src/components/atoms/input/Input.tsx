@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Styled from 'styled-components';
+
+import { Element } from '../../../primitives';
 
 interface IInputProps {
     /* placeholder: Placeholder for input */
@@ -16,37 +17,17 @@ const defaultProps = {
     invalid: false
 };
 
-const InputElement = Styled.input`
-    /* Takes parent's width */
-    width: 100%;
-    /* Default input padding */
-    padding: 0 8px;
-    /* Default input height */
-    height: 32px;
-    /* Solid border with width 1px. Set color to danger when invalid */
-    border: 1px solid ${(props: any) =>
-        props.invalid
-            ? props.theme.colors.danger.base
-            : props.theme.colors.secondary.base};
-    border-radius: 4px;
-    outline: none;
-
-  &:focus:not(:disabled), &:hover:not(:disabled) {
-    border-color: ${(props: any) =>
-        props.invalid
-            ? props.theme.colors.danger.base
-            : props.theme.colors.primary.dark};
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.4;
-    box-shadow: none;
-  }
-`;
-
 const Input = (props: IInputProps) => {
-    return <InputElement {...props} />;
+    const { invalid, ...others } = props;
+
+    return (
+        <Element
+            as="input"
+            component="Input"
+            aria-invalid={invalid}
+            {...others}
+        />
+    );
 };
 
 Input.defaultProps = defaultProps;

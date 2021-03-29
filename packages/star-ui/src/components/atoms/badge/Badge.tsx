@@ -16,7 +16,7 @@ interface IBadgeProps {
     /* variant: Different variant can have different styles */
     variant?: BadgeVariants;
 }
-const defaultProps = {
+const DEFAULT_PROPS = {
     variant: 'secondary'
 };
 
@@ -24,5 +24,5 @@ const Badge = (props: IBadgeProps) => {
     return <Element as="span" component="Badge" {...props} />;
 };
 
-Badge.defaultProps = defaultProps;
+Badge.defaultProps = DEFAULT_PROPS;
 export default Badge;
