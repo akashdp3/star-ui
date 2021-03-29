@@ -26,6 +26,7 @@
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
   },
   "dependencies": {
+    "deepmerge": "^4.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^5.0.1"

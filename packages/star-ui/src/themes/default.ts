@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 
-const theme: DefaultTheme = {
+const tokens = {
   colors: {
     primary: {
       lighter: 'rgb(219, 235, 255)',
@@ -78,4 +78,202 @@ const theme: DefaultTheme = {
   }
 };
 
-export { theme };
+/**
+ * Components
+ */
+const components = {
+  Alert: {
+    padding: '12px',
+    borderRadius: '2px',
+    lineHeight: '1',
+    variants: {
+      error: {
+        color: tokens.colors.danger.dark,
+        backgroundColor: tokens.colors.danger.lighter
+      },
+      warning: {
+        color: tokens.colors.warning.dark,
+        backgroundColor: tokens.colors.warning.lighter
+      },
+      success: {
+        color: tokens.colors.success.dark,
+        backgroundColor: tokens.colors.success.lighter
+      },
+      info: {
+        color: tokens.colors.primary.dark,
+        backgroundColor: tokens.colors.primary.lighter
+      }
+    }
+  },
+  Badge: {
+    padding: '2px 4px',
+    borderRadius: '4px',
+    variants: {
+      primary: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.primary.base
+      },
+      secondary: {
+        color: tokens.colors.secondary.dark,
+        backgroundColor: tokens.colors.secondary.lighter
+      },
+      success: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.success.base
+      },
+      danger: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.danger.base
+      },
+      warning: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.warning.base
+      }
+    }
+  },
+  Button: {
+    display: 'inline-flex',
+    cursor: 'pointer',
+    borderWidth: '1px',
+    borderRadius: '4px',
+    ':disabled': {
+      cursor: 'not-allowed',
+      opacity: '0.4',
+      boxShadow: 'none'
+    },
+    sizes: {
+      small: {
+        paddingBlock: tokens.spaces[2],
+        paddingInline: tokens.spaces[3],
+        fontSize: tokens.fontSizes[2]
+      },
+      medium: {
+        paddingBlock: tokens.spaces[2],
+        paddingInline: tokens.spaces[3],
+        fontSize: tokens.fontSizes[4]
+      },
+      large: {
+        paddingBlock: tokens.spaces[2],
+        paddingInline: tokens.spaces[3],
+        fontSize: tokens.fontSizes[5]
+      }
+    },
+    variants: {
+      primary: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.primary.base,
+        borderColor: tokens.colors.primary.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.primary.dark,
+          borderColor: tokens.colors.primary.dark
+        }
+      },
+      secondary: {
+        color: tokens.colors.primary.base,
+        backgroundColor: tokens.colors.white.base,
+        borderColor: tokens.colors.primary.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.primary.lighter,
+          borderColor: tokens.colors.primary.base
+        }
+      },
+      success: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.success.base,
+        borderColor: tokens.colors.success.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.success.dark,
+          borderColor: tokens.colors.success.dark
+        }
+      },
+      danger: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.danger.base,
+        borderColor: tokens.colors.danger.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.danger.dark,
+          borderColor: tokens.colors.danger.dark
+        }
+      },
+      warning: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.warning.base,
+        borderColor: tokens.colors.warning.base,
+        ':hover:enabled': {
+          backgroundColor: tokens.colors.warning.dark,
+          borderColor: tokens.colors.warning.dark
+        }
+      },
+      ghost: {
+        color: tokens.colors.primary.base,
+        backgroundColor: 'transparent',
+        borderColor: 'transparent',
+        ':hover:enabled': {
+          backgroundColor: 'transparent',
+          borderColor: 'transparent'
+        }
+      }
+    }
+  },
+  Card: {
+    width: '500px',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: tokens.colors.secondary.light,
+    padding: '16px',
+    boxShadow:
+      'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px'
+  },
+  Heading: {},
+  Input: {
+    width: '100%',
+    padding: '0 8px',
+    height: '32px',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: tokens.colors.secondary.base,
+    borderRadius: '4px',
+    ':disabled': {
+      cursor: 'not-allowed',
+      opacity: '0.4',
+      boxShadow: 'none'
+    },
+    '&[aria-invalid="true"]': {
+      borderColor: tokens.colors.danger.base
+    }
+  },
+  Skeleton: {
+    animationDuration: '1200ms',
+    animationIterationCount: 'infinite',
+    animationTimingFunction: 'linear',
+    backgroundImage:
+      'linear-gradient(90deg, rgb(221, 221, 221, 0.6) 0%, rgb(221, 221, 221, 0.6) 20%, transparent 50%, rgb(221, 221, 221, 0.6) 80%, rgb(221, 221, 221, 0.6) 100%)',
+    backgroundPositionX: '0%',
+    backgroundPositionY: '0%',
+    backgroundSize: '200% 200%'
+  },
+  Text: {},
+  TextArea: {
+    width: '100%',
+    padding: '8px',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: tokens.colors.secondary.base,
+    borderRadius: '4px',
+    ':disabled': {
+      cursor: 'not-allowed',
+      opacity: '0.4',
+      boxShadow: 'none'
+    },
+    '&[aria-invalid="true"]': {
+      borderColor: tokens.colors.danger.base
+    }
+  }
+};
+
+const theme: DefaultTheme = {
+  tokens,
+  components
+};
+
+export default theme;

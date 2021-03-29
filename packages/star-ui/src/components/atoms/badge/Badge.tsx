@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Styled from 'styled-components';
 
-import { getAppearance } from './badge.helper';
+import { Element } from '../../../primitives';
 
 type BadgeVariants = 'primary' | 'secondary' | 'success' | 'danger' | 'warning';
 
@@ -17,24 +16,13 @@ interface IBadgeProps {
     /* variant: Different variant can have different styles */
     variant?: BadgeVariants;
 }
-const defaultProps = {
+const DEFAULT_PROPS = {
     variant: 'secondary'
 };
 
-const BadgeElement = Styled.span`
-  font-size: ${(props: any) => props.theme.fontSizes[props.size]};
-  padding: 2px 4px;
-  background-color: ${(props: any) =>
-      props.backgroundColor || getAppearance(props).backgroundColor};
-  color: ${(props: any) => props.color || getAppearance(props).color};
-  border-radius: 4px;
-`;
-
 const Badge = (props: IBadgeProps) => {
-    const { children, ...others } = props;
-
-    return <BadgeElement {...others}>{children}</BadgeElement>;
+    return <Element as="span" component="Badge" {...props} />;
 };
 
-Badge.defaultProps = defaultProps;
+Badge.defaultProps = DEFAULT_PROPS;
 export default Badge;

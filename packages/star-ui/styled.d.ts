@@ -12,20 +12,27 @@ type COLOR = {
 // and extend them!
 declare module 'styled-components' {
   export interface DefaultTheme {
-    colors: {
-      primary: COLOR;
-      secondary: COLOR;
-      success: COLOR;
-      danger: COLOR;
-      warning: COLOR;
-      white: { base: string };
-      black: { base: string };
+    tokens: {
+      colors: {
+        primary: COLOR;
+        secondary: COLOR;
+        success: COLOR;
+        danger: COLOR;
+        warning: COLOR;
+        white: { base: string };
+        black: { base: string };
+      };
+      fontSizes: {
+        [key: number]: string;
+      };
+      spaces: {
+        [key: number]: string;
+      };
     };
-    fontSizes: {
-      [key: number]: string;
-    };
-    spaces: {
-      [key: number]: string;
+    components: {
+      [key: string]: {
+        [key: string]: any;
+      };
     };
   }
 }

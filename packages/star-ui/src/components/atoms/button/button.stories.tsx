@@ -131,6 +131,5 @@ export const Sizes = () => (
                 Button
             </Button>
         </Stack>
-
     </Stack>
 );

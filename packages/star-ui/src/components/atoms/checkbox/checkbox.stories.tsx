@@ -3,7 +3,7 @@ import { Meta } from '@storybook/react/types-6-0';
 import { action } from '@storybook/addon-actions';
 
 import CheckBox from './Checkbox';
-import { Stack } from '../../';
+import { Stack } from '../../../index';
 
 export default {
     title: 'CheckBox',
