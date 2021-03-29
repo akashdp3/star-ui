@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Styled from 'styled-components';
+
+import { Element } from '../../../primitives';
 
 interface ITextAreaProps {
     /* placeholder: textarea placeholder */
@@ -14,36 +15,17 @@ const DefaultProps = {
     isInvalid: false
 };
 
-const TextAreaElement = Styled.textarea`
-    /* Takes parent's default width */
-    width: 100%;
-    /* Default padding */
-    padding: 8px;
-    /* Solid border with 1px width. border color depends on 'invalid' flag */
-    border: 1px solid ${(props: any) =>
-        props.invalid
-            ? props.theme.colors.danger.base
-            : props.theme.colors.secondary.base};
-    border-radius: 4px;
-    /* TODO: Check impact on accessibility due to following */
-    outline: none;
-
-    &:focus:not(:disabled), &:hover:not(:disabled) {
-    border-color: ${(props: any) =>
-        props.invalid
-            ? props.theme.colors.danger.base
-            : props.theme.colors.primary.dark};
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.4;
-    box-shadow: none;
-  }
-`;
-
 const TextArea = (props: ITextAreaProps) => {
-    return <TextAreaElement {...props} />;
+    const { invalid, ...others } = props;
+
+    return (
+        <Element
+            as="textarea"
+            component="TextArea"
+            aria-invalid={invalid}
+            {...others}
+        />
+    );
 };
 
 TextArea.defaultProps = DefaultProps;

@@ -136,6 +136,11 @@ const components = {
     cursor: 'pointer',
     borderWidth: '1px',
     borderRadius: '4px',
+    ':disabled': {
+      cursor: 'not-allowed',
+      opacity: '0.4',
+      boxShadow: 'none'
+    },
     sizes: {
       small: {
         paddingBlock: tokens.spaces[2],
@@ -210,6 +215,15 @@ const components = {
       }
     }
   },
+  Card: {
+    width: '500px',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: tokens.colors.secondary.light,
+    padding: '16px',
+    boxShadow:
+      'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px'
+  },
   Heading: {},
   Input: {
     width: '100%',
@@ -238,7 +252,23 @@ const components = {
     backgroundPositionY: '0%',
     backgroundSize: '200% 200%'
   },
-  Text: {}
+  Text: {},
+  TextArea: {
+    width: '100%',
+    padding: '8px',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: tokens.colors.secondary.base,
+    borderRadius: '4px',
+    ':disabled': {
+      cursor: 'not-allowed',
+      opacity: '0.4',
+      boxShadow: 'none'
+    },
+    '&[aria-invalid="true"]': {
+      borderColor: tokens.colors.danger.base
+    }
+  }
 };
 
 const theme: DefaultTheme = {
