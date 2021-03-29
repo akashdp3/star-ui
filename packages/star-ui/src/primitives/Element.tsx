@@ -40,6 +40,7 @@ const Element = (props: IElementProps) => {
             );
         }
     }
+    console.log({ componentStyles });
 
     const element = () => React.createElement(tag, null, children);
     const StyledElement = Styled(element)({

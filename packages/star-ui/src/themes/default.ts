@@ -104,6 +104,32 @@ const components = {
         backgroundColor: tokens.colors.primary.lighter
       }
     }
+  },
+  Badge: {
+    padding: '2px 4px',
+    borderRadius: '4px',
+    variants: {
+      primary: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.primary.base
+      },
+      secondary: {
+        color: tokens.colors.secondary.dark,
+        backgroundColor: tokens.colors.secondary.lighter
+      },
+      success: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.success.base
+      },
+      danger: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.danger.base
+      },
+      warning: {
+        color: tokens.colors.white.base,
+        backgroundColor: tokens.colors.warning.base
+      }
+    }
   }
 };
 
