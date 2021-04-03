@@ -8,8 +8,10 @@ interface IElementProps {
     variant?: string;
     size?: string;
     children?: React.ReactNode;
-    css?: any;
-    theme?: DefaultTheme;
+    css?: {
+        [key: string]: string;
+    };
+    theme?: DefaultTheme | undefined;
 }
 
 const Element = (props: IElementProps) => {

@@ -252,7 +252,41 @@ const components = {
     backgroundPositionY: '0%',
     backgroundSize: '200% 200%'
   },
-  Text: {},
+  Text: {
+    sizes: {
+      0: { fontSize: tokens.fontSizes[0] },
+      1: { fontSize: tokens.fontSizes[1] },
+      2: { fontSize: tokens.fontSizes[2] },
+      3: { fontSize: tokens.fontSizes[3] },
+      4: { fontSize: tokens.fontSizes[4] },
+      5: { fontSize: tokens.fontSizes[5] },
+      6: { fontSize: tokens.fontSizes[6] },
+      7: { fontSize: tokens.fontSizes[7] },
+      8: { fontSize: tokens.fontSizes[8] },
+      9: { fontSize: tokens.fontSizes[9] },
+      10: { fontSize: tokens.fontSizes[10] }
+    },
+    variants: {
+      default: {
+        color: tokens.colors.secondary.dark
+      },
+      primary: {
+        color: tokens.colors.primary.base
+      },
+      secondary: {
+        color: tokens.colors.secondary.base
+      },
+      success: {
+        color: tokens.colors.success.base
+      },
+      danger: {
+        color: tokens.colors.danger.base
+      },
+      warning: {
+        color: tokens.colors.warning.base
+      }
+    }
+  },
   TextArea: {
     width: '100%',
     padding: '8px',
