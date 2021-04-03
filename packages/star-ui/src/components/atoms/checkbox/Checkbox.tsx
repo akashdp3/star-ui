@@ -1,16 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Styled from 'styled-components';
 
 interface ICheckBoxProps {
     label?: string;
-    onChange?: Function; // TODO: Change this to HTML event
     disabled?: boolean;
     checked?: boolean;
 }
 const DEFAULT_PROPS = {
     label: '',
-    onChange: () => {},
     disabled: false,
     checked: false
 };
@@ -98,9 +95,11 @@ const CheckBox = (props: ICheckBoxProps) => {
     const { label, disabled, ...others } = props;
 
     return (
+        // @ts-ignore
         <StyledCheckBoxContainer disabled={disabled}>
             <span className="label">{label}</span>
             <input type="checkbox" disabled={disabled} {...others} />
+            {/* @ts-ignore */}
             <StyledCheckBoxSpan className="checkmark" disabled={disabled} />
         </StyledCheckBoxContainer>
     );

@@ -34,7 +34,7 @@ const SKELETON_ITEM_DEFAULT_PROPS = {
 const SKELETON_DEFAULT_PROPS = {
     isLoading: true,
     config: []
-}
+};
 
 /* Skeleton animation */
 const shine = keyframes`
@@ -43,15 +43,15 @@ const shine = keyframes`
 `;
 
 const StyledSkeleton = Styled.div`
-    margin-bottom: ${(props: any) => props.marginBottom || "16px"};
+    margin-bottom: ${(props: any) => props.marginBottom || '16px'};
     box-sizing: border-box;
-    height: ${(props: any) => props.height || "inherit"};
-    animation-duration: ${(props: any) => props.speed || "1200ms"};
-    width: ${(props: any) => props.width || "100%"};
+    height: ${(props: any) => props.height || 'inherit'};
+    animation-duration: ${(props: any) => props.speed || '1200ms'};
+    width: ${(props: any) => props.width || '100%'};
     animation-name: ${shine};
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    border-radius: ${(props: any) => props.borderRadius || "2px"};
+    border-radius: ${(props: any) => props.borderRadius || '2px'};
     background-image: linear-gradient(90deg, rgb(221, 221, 221, 0.6) 0%, rgb(221, 221, 221, 0.6) 20%, transparent 50%, rgb(221, 221, 221, 0.6) 80%, rgb(221, 221, 221, 0.6) 100%);
     background-position-x: 0%;
     background-position-y: 0%;
@@ -71,7 +71,8 @@ const SkeletonItem = (props: ISkeletonItem) => {
     if (isLoading) {
         return (
             <>
-                {lines.map(line => (
+                {lines.map((line) => (
+                    // @ts-ignore
                     <StyledSkeleton {...others} key={line} />
                 ))}
             </>
@@ -89,7 +90,7 @@ const Skeleton = (props: ISkeleton) => {
     if (isLoading && config && config.length > 0) {
         return (
             <>
-                {config.map(x => (
+                {config.map((x) => (
                     <React.Fragment key={x.id || null}>
                         <SkeletonItem {...x} isLoading={isLoading} />
                     </React.Fragment>

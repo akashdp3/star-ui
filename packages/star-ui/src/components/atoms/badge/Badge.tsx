@@ -7,8 +7,6 @@ type BadgeVariants = 'primary' | 'secondary' | 'success' | 'danger' | 'warning';
 interface IBadgeProps {
     /* children: preferred string type */
     children: React.ReactNode;
-    /* size: Custom font size */
-    size?: number;
     /* color: Custom text color */
     color?: string;
     /* backgroundColor: Custom background color */

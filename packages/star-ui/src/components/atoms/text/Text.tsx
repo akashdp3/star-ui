@@ -43,6 +43,7 @@ const Text = (props: ITextProps) => {
         display: width && 'block'
     };
 
+    // @ts-ignore
     return <Element as="span" component="Text" css={css} {...others} />;
 };
 
