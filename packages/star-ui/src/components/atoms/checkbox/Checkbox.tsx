@@ -31,7 +31,7 @@ const StyledCheckBoxContainer = Styled.label`
         ${(props: any) =>
             props.disabled &&
             `
-                color: ${props.theme.colors.secondary.light};
+                color: ${props.theme.tokens.colors.secondary.light};
             `}
         padding-top: 2px;
     }
@@ -45,12 +45,13 @@ const StyledCheckBoxContainer = Styled.label`
 
     /* On mouse-over, add a grey background color */
     &:hover input:not(:disabled) ~ .checkmark {
-        border-color: ${(props: any) => props.theme.colors.primary.base};
+        border-color: ${(props: any) => props.theme.tokens.colors.primary.base};
     }
 
     /* When the checkbox is checked, add a blue background */
     input:checked ~ .checkmark {
-        background-color: ${(props: any) => props.theme.colors.primary.base};
+        background-color: ${(props: any) =>
+            props.theme.tokens.colors.primary.base};
     }
 
     /* Show the checkmark when checked */
@@ -65,7 +66,7 @@ const StyledCheckBoxContainer = Styled.label`
         width: 4px;
         height: 8px;
         border: 1px solid ${(props: any) =>
-            props.theme.colors.secondary.lighter};
+            props.theme.tokens.colors.secondary.lighter};
         border-width: 0 1px 1px 0;
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -80,7 +81,8 @@ const StyledCheckBoxSpan = Styled.span`
     left: 0;
     height: 16px;
     width: 16px;
-    border: 1px solid ${(props: any) => props.theme.colors.secondary.lighter};
+    border: 1px solid ${(props: any) =>
+        props.theme.tokens.colors.secondary.lighter};
     border-radius: 4px;
     cursor: ${(props: any) => (props.disabled ? 'not-allowed' : 'pointer')};
 

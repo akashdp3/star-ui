@@ -34,7 +34,7 @@ const defaultProps = {
 
 const TextElement = Styled.span`
   color: ${(props: any) => getTextColor(props)};
-  font-size: ${(props: any) => props.theme.fontSizes[props.size]};
+  font-size: ${(props: any) => props.theme.tokens.fontSizes[props.size]};
   text-align: ${(props: any) => props.align};
   max-width: ${(props: any) => props.width};
   white-space: ${(props: any) => props.width && 'nowrap'};

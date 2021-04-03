@@ -25,13 +25,14 @@ const StyledRadioContainer = Styled.label`
 
     /* On mouse-over, add a primary background color */
     &:hover input:not(:disabled) ~ .checkmark {
-        border-color: ${(props: any) => props.theme.colors.primary.base};
+        border-color: ${(props: any) => props.theme.tokens.colors.primary.base};
     }
 
     /* When the radio is checked, add a primary background */
     input:checked ~ .checkmark {
-        background-color: ${(props: any) => props.theme.colors.white.base};
-        border-color: ${(props: any) => props.theme.colors.primary.base};
+        background-color: ${(props: any) =>
+            props.theme.tokens.colors.white.base};
+        border-color: ${(props: any) => props.theme.tokens.colors.primary.base};
     }
 
     /* Show the checkmark when checked */
@@ -45,7 +46,7 @@ const StyledRadioContainer = Styled.label`
         left: 3px;
         width: 10px;
         height: 10px;
-        background: ${(props: any) => props.theme.colors.primary.base};
+        background: ${(props: any) => props.theme.tokens.colors.primary.base};
         border-radius: 50%;
     }
     .default-radio-input {
@@ -55,7 +56,7 @@ const StyledRadioContainer = Styled.label`
         ${(props: any) =>
             props.disabled &&
             `
-            color: ${props.theme.colors.secondary.light};
+            color: ${props.theme.tokens.colors.secondary.light};
         `}
         padding-top: 2px;
     }
@@ -67,7 +68,7 @@ const CustomRadioButton = Styled.span`
     left: 1px;
     height: 16px;
     width: 16px;
-    border: 1px solid ${(props) => props.theme.colors.secondary.lighter};
+    border: 1px solid ${(props) => props.theme.tokens.colors.secondary.lighter};
     border-radius: 50%;
 
     /* Create the checkmark/indicator (hidden when not checked) */

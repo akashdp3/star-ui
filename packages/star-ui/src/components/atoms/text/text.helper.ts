@@ -1,10 +1,12 @@
 interface ITextAppearance {
   variant: string;
-  theme: { colors: any };
+  theme: { tokens: { colors: any } };
 }
 
 export const getTextColor = ({ variant, theme }: ITextAppearance) => {
-  const { colors } = theme;
+  const {
+    tokens: { colors }
+  } = theme;
 
   switch (variant) {
     case 'primary':
