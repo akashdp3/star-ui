@@ -1,4 +1,3 @@
-// import original module declarations
 import 'styled-components';
 
 type COLOR = {
@@ -9,7 +8,6 @@ type COLOR = {
   darker: string;
 };
 
-// and extend them!
 declare module 'styled-components' {
   export interface DefaultTheme {
     tokens: {
