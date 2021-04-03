@@ -48,10 +48,10 @@ const SpinnerElement = Styled.span`
     border: 2px solid;
     /* Assign custom border color, otherwise assign secondary light from theme */
     border-color: ${(props: any) =>
-        props.borderColor || props.theme.colors.secondary.light};
+        props.borderColor || props.theme.tokens.colors.secondary.light};
     /* Assign custom border left color, otherwise assign secondary dark from theme */
     border-left-color: ${(props: any) =>
-        props.borderLeftColor || props.theme.colors.secondary.dark};
+        props.borderLeftColor || props.theme.tokens.colors.secondary.dark};
     /* Set border radius to 50% to make it a circle */
     border-radius: 50%;
     /* Spinner animation */
