@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Styled from 'styled-components';
 
-import { getTextColor } from './text.helper';
+import { Element } from '../../../primitives';
 
 type TextVariants =
     | 'primary'
@@ -26,28 +25,26 @@ interface ITextProps {
     /* style: custom style if any */
     style?: object;
 }
-const defaultProps = {
+const DEFAULT_PROPS = {
     align: 'left',
     variant: 'default',
     style: {}
 };
 
-const TextElement = Styled.span`
-  color: ${(props: any) => getTextColor(props)};
-  font-size: ${(props: any) => props.theme.tokens.fontSizes[props.size]};
-  text-align: ${(props: any) => props.align};
-  max-width: ${(props: any) => props.width};
-  white-space: ${(props: any) => props.width && 'nowrap'};
-  overflow: ${(props: any) => props.width && 'hidden'};
-  text-overflow: ${(props: any) => props.width && 'ellipsis'};
-  display: ${(props: any) => props.width && 'block'};
-`;
-
 const Text = (props: ITextProps) => {
-    const { children, ...others } = props;
+    const { width, align, ...others } = props;
 
-    return <TextElement {...others}>{children}</TextElement>;
+    let css = {
+        textAlign: align,
+        maxWidth: width,
+        whiteSpace: width && 'nowrap',
+        overflow: width && 'hidden',
+        textOverflow: 'ellipsis',
+        display: width && 'block'
+    };
+
+    return <Element as="span" component="Text" css={css} {...others} />;
 };
 
-Text.defaultProps = defaultProps;
+Text.defaultProps = DEFAULT_PROPS;
 export default Text;
