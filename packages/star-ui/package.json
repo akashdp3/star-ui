@@ -27,8 +27,8 @@
   },
   "dependencies": {
     "deepmerge": "^4.2.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
