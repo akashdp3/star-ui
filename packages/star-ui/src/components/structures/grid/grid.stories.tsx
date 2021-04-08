@@ -8,15 +8,31 @@ export default {
     component: Grid
 } as Meta;
 
+const Box = ({ children }: any) => {
+    return (
+        <div
+            style={{
+                border: '2px solid deepskyblue',
+                backgroundColor: 'lightskyblue',
+                padding: '16px',
+                borderRadius: '4px',
+                opacity: '0.8'
+            }}
+        >
+            {children}
+        </div>
+    );
+};
+
 /*
  * Default grid
  * */
 export const Default = () => {
     return (
         <Grid templateColumns="repeat(3, auto)">
-            <p>Element A</p>
-            <p>Element B</p>
-            <p>Element C</p>
+            <Box>Box A</Box>
+            <Box>Box B</Box>
+            <Box>Box C</Box>
         </Grid>
     );
 };
@@ -27,9 +43,9 @@ export const Default = () => {
 export const Horizontal = () => {
     return (
         <Grid templateColumns="repeat(3, auto)">
-            <p>Element A</p>
-            <p>Element B</p>
-            <p>Element C</p>
+            <Box>Box A</Box>
+            <Box>Box B</Box>
+            <Box>Box C</Box>
         </Grid>
     );
 };
@@ -40,9 +56,9 @@ export const Horizontal = () => {
 export const Vertical = () => {
     return (
         <Grid templateRows="repeat(3, auto)">
-            <p>Element A</p>
-            <p>Element B</p>
-            <p>Element C</p>
+            <Box>Box A</Box>
+            <Box>Box B</Box>
+            <Box>Box C</Box>
         </Grid>
     );
 };
