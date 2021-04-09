@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Styled from 'styled-components';
+
+import { Element } from '../../../primitives';
 
 type StackDirections = 'horizontal' | 'vertical';
-
 interface IStackProps {
     /* direction: stack direction('vertical', 'horizontal') */
     direction?: StackDirections;
@@ -10,27 +10,24 @@ interface IStackProps {
     children: React.ReactNode;
     /* align items */
     align?: string;
+    /* Flex gap */
+    gap?: string;
 }
-const defaultProps = {
+const DEFAULT_PROPS = {
     direction: 'horizontal'
 };
 
-const StackElement = Styled.div`
-    display: flex;
-    flex-direction: ${(props: any) =>
-        props.direction === 'vertical' ? 'column' : 'row'};
-    gap: 8px;
-
-    ${(props: any) => props.align && `
-        align-items: ${props.align};
-    `}
-`;
-
 const StackComponent = (props: IStackProps) => {
-    const { children, ...others } = props;
+    const { direction, align, gap, ...others } = props;
+    const css = {
+        flexDirection: direction === 'vertical' ? 'column' : 'row',
+        alignItems: align,
+        gap
+    };
 
-    return <StackElement {...others}>{children}</StackElement>;
+    // @ts-ignore
+    return <Element as="div" component="Stack" css={css} {...others} />;
 };
 
-StackComponent.defaultProps = defaultProps;
+StackComponent.defaultProps = DEFAULT_PROPS;
 export default StackComponent;
