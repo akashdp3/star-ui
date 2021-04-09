@@ -14,7 +14,8 @@ interface IStackProps {
     gap?: string;
 }
 const DEFAULT_PROPS = {
-    direction: 'horizontal'
+    direction: 'horizontal',
+    gap: '8px'
 };
 
 const StackComponent = (props: IStackProps) => {
