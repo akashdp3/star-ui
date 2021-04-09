@@ -29,7 +29,7 @@ const Box = ({ children }: any) => {
  */
 export const Default = () => {
     return (
-        <Stack>
+        <Stack gap="16px">
             <Box>Box A</Box>
             <Box>Box B</Box>
             <Box>Box C</Box>
@@ -42,7 +42,7 @@ export const Default = () => {
  */
 export const Horizontal = () => {
     return (
-        <Stack direction="horizontal">
+        <Stack direction="horizontal" gap="16px">
             <Box>Box A</Box>
             <Box>Box B</Box>
             <Box>Box C</Box>
@@ -55,7 +55,7 @@ export const Horizontal = () => {
  */
 export const Vertical = () => {
     return (
-        <Stack direction="vertical">
+        <Stack direction="vertical" gap="16px">
             <Box>Box A</Box>
             <Box>Box B</Box>
             <Box>Box C</Box>

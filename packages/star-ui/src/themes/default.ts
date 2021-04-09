@@ -256,6 +256,9 @@ const components = {
     backgroundPositionY: '0%',
     backgroundSize: '200% 200%'
   },
+  Stack: {
+    display: 'flex'
+  },
   Text: {
     sizes: {
       0: { fontSize: tokens.fontSizes[0] },
