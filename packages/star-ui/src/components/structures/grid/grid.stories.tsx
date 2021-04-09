@@ -29,7 +29,7 @@ const Box = ({ children }: any) => {
  * */
 export const Default = () => {
     return (
-        <Grid templateColumns="repeat(3, auto)">
+        <Grid templateColumns="repeat(3, auto)" gap="16px">
             <Box>Box A</Box>
             <Box>Box B</Box>
             <Box>Box C</Box>
@@ -42,7 +42,7 @@ export const Default = () => {
  */
 export const Horizontal = () => {
     return (
-        <Grid templateColumns="repeat(3, auto)">
+        <Grid templateColumns="repeat(3, auto)" gap="16px">
             <Box>Box A</Box>
             <Box>Box B</Box>
             <Box>Box C</Box>
@@ -55,7 +55,7 @@ export const Horizontal = () => {
  */
 export const Vertical = () => {
     return (
-        <Grid templateRows="repeat(3, auto)">
+        <Grid templateRows="repeat(3, auto)" gap="16px">
             <Box>Box A</Box>
             <Box>Box B</Box>
             <Box>Box C</Box>

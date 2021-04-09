@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Styled from 'styled-components';
+
+import { Element } from '../../../primitives';
 
 interface IGrid {
     templateColumns?: string;
@@ -7,32 +8,27 @@ interface IGrid {
     gap?: string;
     children: React.ReactNode;
 }
-const GRID_DEFAULT_PROPS = {
-    template: '',
+const DEFAULT_PROPS = {
+    templateRows: '',
+    templateColumns: '',
     gap: ''
 };
 
-const Element = Styled.div`
-    display: grid;
-
-    ${(props: any) =>
-        props.templateColumns &&
-        `
-        grid-template-columns: ${props.templateColumns};
-    `}
-
-    ${(props: any) =>
-        props.templateRows &&
-        `
-        grid-template-rows: ${props.templateRows};
-    `}
-`;
-
 const Grid = (props: IGrid) => {
-    const { children, ...others } = props;
+    const { children, templateRows, templateColumns, gap } = props;
+    let css = {
+        gridTemplateColumns: templateColumns,
+        gridTemplateRows: templateRows,
+        gridGap: gap
+    };
 
-    return <Element {...others}>{children}</Element>;
+    return (
+        // @ts-ignore
+        <Element as="div" component="Grid" css={css}>
+            {children}
+        </Element>
+    );
 };
 
-Grid.defaultProps = GRID_DEFAULT_PROPS;
+Grid.defaultProps = DEFAULT_PROPS;
 export default Grid;
