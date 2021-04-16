@@ -5,7 +5,7 @@ import Radio from './Radio';
 import { Stack } from '../../../index';
 
 export default {
-    title: 'Radio',
+    title: 'Atoms/Radio',
     component: Radio
 } as Meta;
 

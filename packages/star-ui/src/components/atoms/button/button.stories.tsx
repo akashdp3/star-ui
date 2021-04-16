@@ -5,7 +5,7 @@ import Button from './Button';
 import Stack from '../../structures/stack/Stack';
 
 export default {
-    title: 'Button',
+    title: 'Atoms/Button',
     component: Button
 } as Meta;
 

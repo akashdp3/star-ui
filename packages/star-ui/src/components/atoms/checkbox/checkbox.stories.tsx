@@ -6,7 +6,7 @@ import CheckBox from './Checkbox';
 import { Stack } from '../../../index';
 
 export default {
-    title: 'CheckBox',
+    title: 'Atoms/CheckBox',
     component: CheckBox
 } as Meta;
 

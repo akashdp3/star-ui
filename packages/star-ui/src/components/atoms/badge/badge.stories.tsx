@@ -5,7 +5,7 @@ import Badge from './Badge';
 import Stack from '../../structures/stack/Stack';
 
 export default {
-    title: 'Badge',
+    title: 'Atoms/Badge',
     component: Badge
 } as Meta;
 

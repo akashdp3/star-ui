@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react/types-6-0';
 import Grid from './Grid';
 
 export default {
-    title: 'Grid',
+    title: 'Structures/Grid',
     component: Grid
 } as Meta;
 

@@ -5,7 +5,7 @@ import TextArea from './TextArea';
 import { Stack } from '../../../index';
 
 export default {
-    title: 'TextArea',
+    title: 'Atoms/TextArea',
     component: TextArea
 } as Meta;
 

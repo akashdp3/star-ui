@@ -5,7 +5,7 @@ import Input from './Input';
 import { Stack } from '../../../index';
 
 export default {
-    title: 'Input',
+    title: 'Atoms/Input',
     component: Input
 } as Meta;
 

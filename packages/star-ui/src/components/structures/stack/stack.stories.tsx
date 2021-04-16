@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react/types-6-0';
 import Stack from './Stack';
 
 export default {
-    title: 'Stack',
+    title: 'Structures/Stack',
     component: Stack
 } as Meta;
 

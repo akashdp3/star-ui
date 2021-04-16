@@ -5,7 +5,7 @@ import Stack from '../../structures/stack/Stack';
 import Text from './Text';
 
 export default {
-    title: 'Text',
+    title: 'Atoms/Text',
     component: Text
 } as Meta;
 

@@ -5,7 +5,7 @@ import Stack from '../../structures/stack/Stack';
 import Alert from './Alert';
 
 export default {
-    title: 'Alert',
+    title: 'Atoms/Alert',
     component: Alert
 } as Meta;
 

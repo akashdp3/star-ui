@@ -5,7 +5,7 @@ import Spinner from './Spinner';
 import { Stack } from '../../structures/stack';
 
 export default {
-    title: 'Spinner',
+    title: 'Atoms/Spinner',
     component: Spinner
 } as Meta;
 

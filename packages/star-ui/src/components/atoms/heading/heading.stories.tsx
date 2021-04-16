@@ -5,7 +5,7 @@ import Heading from './Heading';
 import { Stack } from '../../../index';
 
 export default {
-    title: 'Heading',
+    title: 'Atoms/Heading',
     component: Heading
 } as Meta;
 
