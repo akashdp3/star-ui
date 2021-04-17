@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\n\nconst AlertDocumentation = () => {\n  return /*#__PURE__*/_jsx(\"p\", {\n    children: \"Alert Documentation\"\n  });\n};\n\nexport default AlertDocumentation;","map":null,"metadata":{},"sourceType":"module"}
