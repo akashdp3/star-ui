@@ -26,10 +26,10 @@
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
   },
   "dependencies": {
-    "deepmerge": "^4.2.2",
+    "deepmerge": "4.2.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "5.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
