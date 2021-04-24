@@ -17,3 +17,6 @@ export { Card } from './components/molecules/card';
 // Structures
 export { Stack } from './components/structures/stack';
 export { Grid } from './components/structures/grid';
+
+// Themes
+export { darkTheme, lightTheme, defaultTheme } from "./themes";

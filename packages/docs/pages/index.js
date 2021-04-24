@@ -1,5 +1,7 @@
-function HomePage() {
-  return <div>Welcome to Next.js!</div>;
-}
+import HomePage from './Home.page';
 
-export default HomePage;
+const Index = () => {
+  return <HomePage />;
+};
+
+export default Index;
