@@ -15,6 +15,9 @@
   "devDependencies": {
     "lerna": "^3.22.1"
   },
+  "resolutions": {
+    "babel-loader": "8.1.0"
+  },
   "repository": "https://github.com/akashdsamantra/star-ui.git",
   "author": "Akashdeep Samantra <akash.samantra19@gmail.com>",
   "license": "MIT"
