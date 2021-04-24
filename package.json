@@ -3,9 +3,8 @@
   "version": "1.0.0-alpha.1",
   "private": true,
   "scripts": {
-    "start-docs": "yarn workspace docs dev",
+    "start-docs": "yarn workspace docs start",
     "build-docs": "yarn workspace docs build",
-    "docs": "yarn workspace docs start",
     "start": "yarn workspace react-star-ui storybook",
     "build": "yarn workspace react-star-ui build",
     "build:storybook": "yarn workspace react-star-ui build-storybook"
