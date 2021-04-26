@@ -1,6 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
 
+import NavBar from './NavBar';
 import Sidebar from './Sidebar';
 import Content from './Content';
 
@@ -13,14 +14,12 @@ const AppContainer = (props) => {
     const { children } = props;
 
     return (
-        <div>
-            <div className="h-14 border-b-2 border-bottom border-gray-300">
-                Star-ui
-            </div>
-            <Wrapper>
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <NavBar />
+            {/* <Wrapper>
                 <Sidebar />
                 <Content>{children}</Content>
-            </Wrapper>
+            </Wrapper> */}
         </div>
     );
 };
