@@ -1,5 +1,5 @@
-import React, { lazy } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import AppContainer from '../components/AppContainer';
 import lazyLoad from '../utilities/lazyLoad.hoc';
