@@ -16,10 +16,11 @@ const AppContainer = (props) => {
     return (
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <NavBar />
-            {/* <Wrapper>
+            <Wrapper>
                 <Sidebar />
                 <Content>{children}</Content>
-            </Wrapper> */}
+            </Wrapper>
+            {children}
         </div>
     );
 };

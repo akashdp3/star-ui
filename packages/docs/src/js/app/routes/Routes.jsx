@@ -14,15 +14,17 @@ const HomeComponent = React.lazy(() =>
 const HomeLazyComponent = lazyLoad(HomeComponent);
 
 const Routes = () => {
+    const components = documentations.map((document) => document.components);
+
     return (
         <Switch>
             <Route exact path="/" component={HomeLazyComponent} />
             <AppContainer>
-                {documentations.map((documentation) => (
+                {components.map((component) => (
                     <Route
                         exact
-                        path={`/components${documentation.route}`}
-                        component={documentation.component}
+                        path={`/components${component.route}`}
+                        component={component.content}
                     />
                 ))}
             </AppContainer>
