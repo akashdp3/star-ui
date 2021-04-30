@@ -11,14 +11,14 @@ const Sidebar = (props) => {
         <ul className="h-screen overflow-scroll">
             {documentations.map((documentation) => (
                 <li className="p-2 my-1 mx-auto" key={documentation.name}>
-                    <span className="uppercase text-base font-semibold">
+                    <span className="uppercase  text-sm font-bold">
                         {documentation.name}
                     </span>
 
                     <ul className="mt-2">
                         {documentation.components.map((component) => (
                             <li
-                                className={`p-1 m-1 cursor-pointer ${
+                                className={`p-1 m-1 text-base cursor-pointer ${
                                     location.pathname ===
                                     `/components${component.route}`
                                         ? 'text-blue-600'

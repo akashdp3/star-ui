@@ -14,7 +14,12 @@ const HomeComponent = React.lazy(() =>
 const HomeLazyComponent = lazyLoad(HomeComponent);
 
 const Routes = () => {
-    const components = documentations.map((document) => document.components);
+    const components = [];
+    documentations.forEach((document) => {
+        document.components.forEach((component) => {
+            components.push(component);
+        });
+    });
 
     return (
         <Switch>
@@ -22,7 +27,6 @@ const Routes = () => {
             <AppContainer>
                 {components.map((component) => (
                     <Route
-                        exact
                         path={`/components${component.route}`}
                         component={component.content}
                     />
