@@ -7,7 +7,7 @@ import { documentations } from '../constants/documentation.constant';
 
 const HomeComponent = React.lazy(() =>
     import(
-        /* webpackChunkName: "home-page" */ '../../modules/home/components/Home'
+        /* webpackChunkName: "home-page" */ '../modules/home/components/Home'
     )
 );
 
@@ -27,6 +27,7 @@ const Routes = () => {
             <AppContainer>
                 {components.map((component) => (
                     <Route
+                        key={component.route}
                         path={`/components${component.route}`}
                         component={component.content}
                     />
