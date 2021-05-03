@@ -20,7 +20,6 @@ const AppContainer = (props) => {
                 <Sidebar />
                 <Content>{children}</Content>
             </Wrapper>
-            {children}
         </div>
     );
 };
