@@ -27,7 +27,7 @@ export const Section = ({ children }) => {
     return <div className="mb-28">{children}</div>;
 };
 
-const Block = ({ children }) => {
+export const Block = ({ children }) => {
     return <div className="mb-4">{children}</div>;
 };
 
@@ -63,7 +63,6 @@ const Preview = (props) => {
 
 const Code = (props) => {
     const { children } = props;
-    console.log(children);
 
     const html = highlight(dedent(children || ''), languages['jsx']);
 

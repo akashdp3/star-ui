@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stack, Alert } from 'react-star-ui';
 
-import Example, { Section } from '../components/Example';
+import Example, { Section, Block } from '../components/Example';
 import Table from '../components/Table';
 
 const AlertDocs = () => {
@@ -20,17 +20,18 @@ const AlertDocs = () => {
                 </Example>
             </Section>
             <Section>
-                <Example title="Props">
-                    <Table
-                        tableRows={[
-                            {
-                                name: 'variant',
-                                type: `'error' | 'success' | 'warning' | 'info'`,
-                                default: `'error'`
-                            }
-                        ]}
-                    />
-                </Example>
+                <Block>
+                    <h3 className="text-lg font-semibold">Props</h3>
+                </Block>
+                <Table
+                    tableRows={[
+                        {
+                            name: 'variant',
+                            type: `'error' | 'success' | 'warning' | 'info'`,
+                            default: `'error'`
+                        }
+                    ]}
+                />
             </Section>
             <Section>
                 <Example title="Variants">
