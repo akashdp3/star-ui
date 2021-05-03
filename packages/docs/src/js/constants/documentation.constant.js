@@ -1,4 +1,4 @@
-import Alert from '../documentations/Alert';
+import Alert from '../pages/Alert';
 
 const documentations = [
   {
