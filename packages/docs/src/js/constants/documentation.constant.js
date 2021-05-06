@@ -1,6 +1,7 @@
 import Alert from '../pages/Alert';
 import Badge from '../pages/Badge';
 import Button from '../pages/Button';
+import CheckBox from '../pages/Checkbox';
 
 const documentations = [
   {
@@ -23,7 +24,8 @@ const documentations = [
       },
       {
         name: 'CheckBox',
-        route: '/checkbox'
+        route: '/checkbox',
+        page: CheckBox
       },
       {
         name: 'Heading',
