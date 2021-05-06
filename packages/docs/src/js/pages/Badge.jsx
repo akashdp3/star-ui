@@ -14,7 +14,7 @@ const BadgeDocs = () => {
             <Section>
                 <Example title="Sample Badge">
                     <Example.Preview>
-                        <Badge>Default</Badge>
+                        <Badge>Sample Badge</Badge>
                     </Example.Preview>
                     <Example.Code>{`<Badge>Default</Badge>`}</Example.Code>
                 </Example>
@@ -28,7 +28,7 @@ const BadgeDocs = () => {
                         {
                             name: 'variant',
                             type: `'primary' | 'secondary' | 'success' | 'danger' | 'warning'`,
-                            default: 'secondary'
+                            default: `'secondary'`
                         }
                     ]}
                 />

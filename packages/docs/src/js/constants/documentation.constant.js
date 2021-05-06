@@ -1,5 +1,6 @@
 import Alert from '../pages/Alert';
 import Badge from '../pages/Badge';
+import Button from '../pages/Button';
 
 const documentations = [
   {
@@ -17,7 +18,8 @@ const documentations = [
       },
       {
         name: 'Button',
-        route: '/button'
+        route: '/button',
+        page: Button
       },
       {
         name: 'CheckBox',
