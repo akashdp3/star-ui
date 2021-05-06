@@ -2,6 +2,7 @@ import Alert from '../pages/Alert';
 import Badge from '../pages/Badge';
 import Button from '../pages/Button';
 import CheckBox from '../pages/Checkbox';
+import Heading from '../pages/Heading';
 
 const documentations = [
   {
@@ -29,7 +30,8 @@ const documentations = [
       },
       {
         name: 'Heading',
-        route: '/heading'
+        route: '/heading',
+        page: Heading
       },
       {
         name: 'Input',
