@@ -3,6 +3,7 @@ import Badge from '../pages/Badge';
 import Button from '../pages/Button';
 import CheckBox from '../pages/Checkbox';
 import Heading from '../pages/Heading';
+import Input from '../pages/Input';
 
 const documentations = [
   {
@@ -35,7 +36,8 @@ const documentations = [
       },
       {
         name: 'Input',
-        route: '/input'
+        route: '/input',
+        page: Input
       },
       {
         name: 'Radio',
