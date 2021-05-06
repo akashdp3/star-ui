@@ -64,7 +64,7 @@ const SkeletonDocs = () => {
             <Section>
                 <Example title="Sample Skeleton">
                     <Example.Preview>
-                        <div style={{ margin: '20px', height: '40px' }}>
+                        <div style={{ height: '40px' }}>
                             <Skeleton />
                         </div>
                     </Example.Preview>
@@ -80,7 +80,7 @@ const SkeletonDocs = () => {
             <Section>
                 <Example title="Behaviour">
                     <Example.Preview>
-                        <div style={{ margin: '20px', height: '40px' }}>
+                        <div style={{ height: '40px' }}>
                             <Skeleton isLoading={loading}>
                                 <p>This is a skeleton loader</p>
                             </Skeleton>
