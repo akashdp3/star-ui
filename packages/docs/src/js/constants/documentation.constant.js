@@ -1,4 +1,5 @@
 import Alert from '../pages/Alert';
+import Badge from '../pages/Badge';
 
 const documentations = [
   {
@@ -7,11 +8,12 @@ const documentations = [
       {
         name: 'Alert',
         route: '/alert',
-        content: Alert
+        page: Alert
       },
       {
         name: 'Badge',
-        route: '/badge'
+        route: '/badge',
+        page: Badge
       },
       {
         name: 'Button',

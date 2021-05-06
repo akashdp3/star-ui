@@ -29,7 +29,7 @@ const Routes = () => {
                     <Route
                         key={component.route}
                         path={`/components${component.route}`}
-                        component={component.content}
+                        component={component.page}
                     />
                 ))}
             </AppContainer>
