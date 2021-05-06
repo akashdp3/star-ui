@@ -5,6 +5,7 @@ import CheckBox from '../pages/Checkbox';
 import Heading from '../pages/Heading';
 import Input from '../pages/Input';
 import Radio from '../pages/Radio';
+import Skeleton from '../pages/Skeleton';
 
 const documentations = [
   {
@@ -47,7 +48,8 @@ const documentations = [
       },
       {
         name: 'Skeleton',
-        route: '/skeleton'
+        route: '/skeleton',
+        page: Skeleton
       },
       {
         name: 'Spinner',
