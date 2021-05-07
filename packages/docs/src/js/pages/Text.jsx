@@ -37,6 +37,11 @@ const TextDocs = () => (
                 <Example.Preview>
                     <Text>Sample Text</Text>
                 </Example.Preview>
+                <Example.Code>
+                    {`
+                        <Text>Sample Text</Text>
+                    `}
+                </Example.Code>
             </Example>
         </Section>
         <Section>
