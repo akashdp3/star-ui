@@ -14,7 +14,7 @@ const AlertDocs = () => {
             <Section>
                 <Example title="Sample Alert">
                     <Example.Preview>
-                        <Alert>Sample Aler</Alert>
+                        <Alert>Sample Alert</Alert>
                     </Example.Preview>
                     <Example.Code>{`<Alert>Sample Alert</Alert>`}</Example.Code>
                 </Example>

@@ -1,4 +1,14 @@
 import Alert from '../pages/Alert';
+import Badge from '../pages/Badge';
+import Button from '../pages/Button';
+import CheckBox from '../pages/Checkbox';
+import Heading from '../pages/Heading';
+import Input from '../pages/Input';
+import Radio from '../pages/Radio';
+import Skeleton from '../pages/Skeleton';
+import Spinner from '../pages/Spinner';
+import Text from '../pages/Text';
+import TextArea from '../pages/TextArea';
 
 const documentations = [
   {
@@ -7,47 +17,57 @@ const documentations = [
       {
         name: 'Alert',
         route: '/alert',
-        content: Alert
+        page: Alert
       },
       {
         name: 'Badge',
-        route: '/badge'
+        route: '/badge',
+        page: Badge
       },
       {
         name: 'Button',
-        route: '/button'
+        route: '/button',
+        page: Button
       },
       {
         name: 'CheckBox',
-        route: '/checkbox'
+        route: '/checkbox',
+        page: CheckBox
       },
       {
         name: 'Heading',
-        route: '/heading'
+        route: '/heading',
+        page: Heading
       },
       {
         name: 'Input',
-        route: '/input'
+        route: '/input',
+        page: Input
       },
       {
         name: 'Radio',
-        route: '/route'
+        route: '/route',
+        page: Radio
       },
       {
         name: 'Skeleton',
-        route: '/skeleton'
+        route: '/skeleton',
+        page: Skeleton
       },
       {
         name: 'Spinner',
-        route: '/spinner'
+        route: '/spinner',
+        page: Spinner
       },
       {
         name: 'Text',
-        route: '/text'
+        route: '/text',
+        page: Text
       },
       {
         name: 'TextArea',
-        route: '/textarea'
+        route: '/textarea',
+        page: TextArea
       }
     ]
   },
