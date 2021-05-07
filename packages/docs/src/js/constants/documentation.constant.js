@@ -8,6 +8,7 @@ import Radio from '../pages/Radio';
 import Skeleton from '../pages/Skeleton';
 import Spinner from '../pages/Spinner';
 import Text from '../pages/Text';
+import TextArea from '../pages/TextArea';
 
 const documentations = [
   {
@@ -65,7 +66,8 @@ const documentations = [
       },
       {
         name: 'TextArea',
-        route: '/textarea'
+        route: '/textarea',
+        page: TextArea
       }
     ]
   },
