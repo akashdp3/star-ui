@@ -6,6 +6,8 @@ import Heading from '../pages/Heading';
 import Input from '../pages/Input';
 import Radio from '../pages/Radio';
 import Skeleton from '../pages/Skeleton';
+import Spinner from '../pages/Spinner';
+import Text from '../pages/Text';
 
 const documentations = [
   {
@@ -53,11 +55,13 @@ const documentations = [
       },
       {
         name: 'Spinner',
-        route: '/spinner'
+        route: '/spinner',
+        page: Spinner
       },
       {
         name: 'Text',
-        route: '/text'
+        route: '/text',
+        page: Text
       },
       {
         name: 'TextArea',
