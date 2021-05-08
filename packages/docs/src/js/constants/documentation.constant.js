@@ -1,12 +1,15 @@
 import Alert from '../pages/Alert';
 import Badge from '../pages/Badge';
 import Button from '../pages/Button';
+import Card from '../pages/Card';
 import CheckBox from '../pages/Checkbox';
+import Grid from '../pages/Grid';
 import Heading from '../pages/Heading';
 import Input from '../pages/Input';
 import Radio from '../pages/Radio';
 import Skeleton from '../pages/Skeleton';
 import Spinner from '../pages/Spinner';
+import Stack from '../pages/Stack';
 import Text from '../pages/Text';
 import TextArea from '../pages/TextArea';
 
@@ -76,7 +79,8 @@ const documentations = [
     components: [
       {
         name: 'Card',
-        route: '/card'
+        route: '/card',
+        page: Card
       }
     ]
   },
@@ -85,11 +89,13 @@ const documentations = [
     components: [
       {
         name: 'Grid',
-        route: '/grid'
+        route: '/grid',
+        page: Grid
       },
       {
         name: 'Stack',
-        route: '/stack'
+        route: '/stack',
+        page: Stack
       }
     ]
   }
