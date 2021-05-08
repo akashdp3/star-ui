@@ -3,6 +3,7 @@ import Badge from '../pages/Badge';
 import Button from '../pages/Button';
 import Card from '../pages/Card';
 import CheckBox from '../pages/Checkbox';
+import Grid from '../pages/Grid';
 import Heading from '../pages/Heading';
 import Input from '../pages/Input';
 import Radio from '../pages/Radio';
@@ -87,7 +88,8 @@ const documentations = [
     components: [
       {
         name: 'Grid',
-        route: '/grid'
+        route: '/grid',
+        page: Grid
       },
       {
         name: 'Stack',
