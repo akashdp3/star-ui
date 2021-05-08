@@ -9,6 +9,7 @@ import Input from '../pages/Input';
 import Radio from '../pages/Radio';
 import Skeleton from '../pages/Skeleton';
 import Spinner from '../pages/Spinner';
+import Stack from '../pages/Stack';
 import Text from '../pages/Text';
 import TextArea from '../pages/TextArea';
 
@@ -93,7 +94,8 @@ const documentations = [
       },
       {
         name: 'Stack',
-        route: '/stack'
+        route: '/stack',
+        page: Stack
       }
     ]
   }
