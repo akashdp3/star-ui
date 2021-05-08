@@ -1,6 +1,7 @@
 import Alert from '../pages/Alert';
 import Badge from '../pages/Badge';
 import Button from '../pages/Button';
+import Card from '../pages/Card';
 import CheckBox from '../pages/Checkbox';
 import Heading from '../pages/Heading';
 import Input from '../pages/Input';
@@ -76,7 +77,8 @@ const documentations = [
     components: [
       {
         name: 'Card',
-        route: '/card'
+        route: '/card',
+        page: Card
       }
     ]
   },
