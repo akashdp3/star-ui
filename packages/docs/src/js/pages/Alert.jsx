@@ -9,7 +9,6 @@ const AlertDocs = () => {
         <>
             <div className="mt-2 mb-6">
                 <p className="text-2xl font-semibold">Alert</p>
-                <p>Alerts are used to notify user.</p>
             </div>
             <Section>
                 <Example title="Sample Alert">

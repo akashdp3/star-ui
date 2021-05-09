@@ -14,9 +14,9 @@ const AppContainer = (props) => {
     const { children } = props;
 
     return (
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div>
             <NavBar />
-            <Wrapper>
+            <Wrapper className="max-w-7xl mx-auto mt-2 px-2 sm:px-6 lg:px-8">
                 <Sidebar />
                 <Content>{children}</Content>
             </Wrapper>
