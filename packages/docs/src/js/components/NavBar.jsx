@@ -8,28 +8,39 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="bg-white">
-            <div className="max-w-7xl mx-auto">
+        <nav className="bg-white shadow-md sticky top-0 z-50">
+            <div className="mx-4">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="flex-shrink-0 flex items-center">
+                        <Link
+                            to="/components/alert"
+                            className="flex-shrink-0 flex items-center cursor-pointer"
+                        >
                             <h3 className="font-bold text-xl font-sans text-blue-700">
                                 Star UI
                             </h3>
-                        </div>
-                        <div className="hidden sm:block sm:ml-6">
+                        </Link>
+                        {/* <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
                                 <Link
                                     to="/components/alert"
                                     className="text-blue-600 px-3 py-2 rounded-md text-sm font-semibold"
                                 >
-                                    Docs
+                                    Documentation
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <button className="ml-2 p-1 rounded-full text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <button
+                            className="p-1 rounded-full text-gray-400 hover:text-gray-600 focus:outline-none"
+                            onClick={() =>
+                                window.open(
+                                    'https://github.com/akashdsamantra/star-ui',
+                                    '_blank'
+                                )
+                            }
+                        >
                             <span className="sr-only">Github</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
