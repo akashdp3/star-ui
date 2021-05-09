@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, Stack } from 'react-star-ui';
+import { Heading } from 'react-star-ui';
 
 import Example, { Section, Block } from '../components/Example';
 import Table from '../components/Table';

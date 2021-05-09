@@ -2,7 +2,6 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import AppContainer from '../components/AppContainer';
-import lazyLoad from '../utilities/lazyLoad.hoc';
 import { documentations } from '../constants/documentation.constant';
 
 const Routes = () => {
