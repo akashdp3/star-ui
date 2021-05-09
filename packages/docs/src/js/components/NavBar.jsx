@@ -2,11 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
-    const openGithub = (event) => {
-        event && event.preventDefault && event.preventDefault();
-        window.open('');
-    };
-
     return (
         <nav className="bg-white shadow-md sticky top-0 z-50">
             <div className="mx-4">
