@@ -25,7 +25,7 @@ interface ISpinnerSizes {
 const SPINNER_SIZES: ISpinnerSizes = {
     sm: '16px',
     md: '24px',
-    bg: '32px'
+    lg: '32px'
 };
 
 /**

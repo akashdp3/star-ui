@@ -15,9 +15,6 @@
   "devDependencies": {
     "lerna": "^3.22.1"
   },
-  "dependencies": {
-    "react-star-ui": "0.0.2-alpha.3"
-  },
   "resolutions": {
     "babel-loader": "8.1.0",
     "webpack": "4.44.2"
