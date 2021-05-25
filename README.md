@@ -1,6 +1,6 @@
 # star-ui
 
-[//]: # "![CI](https://github.com/akashdsamantra/star-ui/workflows/CI/badge.svg?branch=main)"
+[//]: # '![CI](https://github.com/akashdsamantra/star-ui/workflows/CI/badge.svg?branch=main)'
 
 This is a design system. Feel free to raise any issue or PR.
 
@@ -15,12 +15,15 @@ So `star-ui` is a monorepo created using `yarn workspace`. There are 3 packages:
 - `star-ui` is the root package in the project. This will contain all components.
 
 ## Installation
-using npm 
+
+using npm
+
 ```
 npm install react-star-ui
 ```
 
 or yarn
+
 ```
 yarn add react-star-ui
 ```
@@ -32,7 +35,9 @@ Clone the repo
 ```
 git clone git@github.com:akashdsamantra/star-ui.git
 ```
+
 After that, run the below command in the root directory to install all dependencies across all packages
+
 ```
 yarn install
 ```
@@ -42,6 +47,5 @@ Run the below command to run storybook server and start working:
 ```
 yarn start
 ```
-
 
 Cheers 🍻
