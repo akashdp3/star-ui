@@ -4,7 +4,9 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import AppContainer from '../components/AppContainer';
 import { documentations } from '../constants/documentation.constant';
 
-const Routes = () => {
+const Routes = (props) => {
+    const { theme, handleChangeTheme } = props;
+
     const components = [];
     documentations.forEach((document) => {
         document.components.forEach((component) => {
@@ -19,7 +21,7 @@ const Routes = () => {
                 path="/"
                 render={() => <Redirect to="/components/alert" />}
             />
-            <AppContainer>
+            <AppContainer theme={theme} handleChangeTheme={handleChangeTheme}>
                 {components.map((component) => (
                     <Route
                         key={component.route}

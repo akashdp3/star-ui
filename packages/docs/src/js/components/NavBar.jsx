@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = (props) => {
+    const { theme, handleChangeTheme } = props;
+
     return (
-        <nav className="bg-white shadow-md sticky top-0 z-50">
+        <nav className="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50">
             <div className="mx-4">
                 <div className="relative flex items-center justify-between h-16">
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -30,7 +32,7 @@ const NavBar = () => {
                             <span className="">Storybook</span>
                         </button>
                         <button
-                            className="p-1 text-gray-400 hover:text-gray-600 focus:outline-none"
+                            className="p-1 mr-2 text-gray-400 hover:text-gray-600 focus:outline-none"
                             title="Github"
                             onClick={() =>
                                 window.open(
@@ -40,6 +42,13 @@ const NavBar = () => {
                             }
                         >
                             <span className="">Github</span>
+                        </button>
+                        <button
+                            className="p-1 text-gray-400 hover:text-gray-600 focus:outline-none"
+                            title="Github"
+                            onClick={handleChangeTheme}
+                        >
+                            <span className="capitalize">{theme}</span>
                         </button>
                     </div>
                 </div>

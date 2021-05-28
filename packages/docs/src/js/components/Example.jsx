@@ -52,8 +52,8 @@ const Preview = (props) => {
     return (
         <div>
             <div
-                style={{ borderWidth: '1px' }}
-                className="p-10 border-gray-300 border-2 rounded-md rounded-b-none"
+                style={{ borderWidth: '1px', borderBottomWidth: '0' }}
+                className="p-10 border-gray-300 dark:border-gray-600 border-2 border-b-0 rounded-md rounded-b-none"
             >
                 {children}
             </div>
