@@ -14385,10 +14385,10 @@ react-sizeme@^3.0.1:
     shallowequal "^1.1.0"
     throttle-debounce "^3.0.1"
 
-react-star-ui@^0.0.2-alpha.3:
-  version "0.0.2-alpha.4"
-  resolved "https://registry.yarnpkg.com/react-star-ui/-/react-star-ui-0.0.2-alpha.4.tgz#516f7be29f4d1c5129d8d85d75ad115c69d91588"
-  integrity sha512-PXj29/H5scPJc66i798t275aQdLssc8v2Ey2WaUuh8NZ5v4oUtd0+aFxZ7kvQYd229s9IgNLgYSdEgjkTBJerg==
+react-star-ui@^0.0.2-alpha.6:
+  version "0.0.2-alpha.6"
+  resolved "https://registry.yarnpkg.com/react-star-ui/-/react-star-ui-0.0.2-alpha.6.tgz#e78bd1dcf5aeb0c7b0d4d56a54f7bdebf0839b65"
+  integrity sha512-RChIMESg0LIABLPyaFAZLBDiQbMT0rVAMyeozNFpw+9NW00smG1QnFwH336Cm+Y2atKZkhKwMoQJobUGyjsVtg==
   dependencies:
     deepmerge "4.2.2"
     react "17.0.1"
