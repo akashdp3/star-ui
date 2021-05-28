@@ -11,11 +11,11 @@ const Wrapper = Styled.div`
 `;
 
 const AppContainer = (props) => {
-    const { children } = props;
+    const { children, ...others } = props;
 
     return (
         <div>
-            <NavBar />
+            <NavBar {...others} />
             <Wrapper className="max-w-7xl mx-auto mt-2 px-2 sm:px-6 lg:px-8">
                 <Sidebar />
                 <Content>{children}</Content>

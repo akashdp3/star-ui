@@ -224,6 +224,10 @@ const components = {
     boxShadow:
       'rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px'
   },
+  Grid: {
+    display: 'grid',
+    alignItems: 'center'
+  },
   Heading: {},
   Input: {
     width: '100%',
@@ -251,6 +255,9 @@ const components = {
     backgroundPositionX: '0%',
     backgroundPositionY: '0%',
     backgroundSize: '200% 200%'
+  },
+  Stack: {
+    display: 'flex'
   },
   Text: {
     sizes: {
