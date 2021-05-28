@@ -45,7 +45,7 @@ yarn install
 Run the below command to run storybook server and start working:
 
 ```
-yarn start
+yarn start-docs
 ```
 
 Cheers 🍻
