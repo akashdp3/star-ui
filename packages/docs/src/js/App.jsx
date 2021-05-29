@@ -47,12 +47,12 @@ const App = (props) => {
     };
 
     return (
-        <Wrapper className={theme} theme={theme}>
-            <ThemeProvider theme={selectedTheme}>
+        <ThemeProvider theme={selectedTheme}>
+            <Wrapper className={theme} theme={theme}>
                 <PageLoader isLoading={state.showPageLoader} />
                 <Routes theme={theme} handleChangeTheme={handleChangeTheme} />
-            </ThemeProvider>
-        </Wrapper>
+            </Wrapper>
+        </ThemeProvider>
     );
 };
 
