@@ -20,19 +20,7 @@ const NavBar = (props) => {
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button
-                            className="p-1 mr-2 rounded-full text-gray-400 hover:text-gray-600 focus:outline-none"
-                            title="Github"
-                            onClick={() =>
-                                window.open(
-                                    'https://star-ui-storybook.vercel.app',
-                                    '_blank'
-                                )
-                            }
-                        >
-                            <span className="">Storybook</span>
-                        </button>
-                        <button
-                            className="p-1 mr-2 text-gray-400 hover:text-gray-600 focus:outline-none"
+                            className="p-1 text-gray-400 hover:text-gray-600 focus:outline-none"
                             title="Github"
                             onClick={() =>
                                 window.open(
