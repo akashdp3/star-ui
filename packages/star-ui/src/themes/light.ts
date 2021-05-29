@@ -1,6 +1,10 @@
 import { DefaultTheme } from 'styled-components';
 
 const tokens = {
+  background: {
+    light: "rgb(255, 255, 255)",
+    dark: "rgb(31, 41, 55)"
+  },
   colors: {
     primary: {
       lighter: 'rgb(219, 235, 255)',
@@ -237,6 +241,7 @@ const components = {
     borderStyle: 'solid',
     borderColor: tokens.colors.secondary.base,
     borderRadius: '4px',
+    backgroundColor: tokens.background.light,
     ':disabled': {
       cursor: 'not-allowed',
       opacity: '0.4',
@@ -275,7 +280,7 @@ const components = {
     },
     variants: {
       default: {
-        color: tokens.colors.secondary.dark
+        color: "inherit"
       },
       primary: {
         color: tokens.colors.primary.base
@@ -301,6 +306,7 @@ const components = {
     borderStyle: 'solid',
     borderColor: tokens.colors.secondary.base,
     borderRadius: '4px',
+    backgroundColor: tokens.background.light,
     ':disabled': {
       cursor: 'not-allowed',
       opacity: '0.4',

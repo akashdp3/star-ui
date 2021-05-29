@@ -48,7 +48,7 @@ const NavBar = (props) => {
                             title="Github"
                             onClick={handleChangeTheme}
                         >
-                            <span className="capitalize">{theme}</span>
+                            <span className="capitalize">Theme: {theme}</span>
                         </button>
                     </div>
                 </div>
