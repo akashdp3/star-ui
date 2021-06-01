@@ -28,7 +28,7 @@ const props = [
     },
     {
         name: 'direction',
-        type: 'string',
+        type: `'horizontal' | 'ver'`,
         default: `'horizontal'`
     },
     {
