@@ -1,6 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const Light = (
+    <svg
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        stroke="currentColor"
+        stroke-width="2"
+        fill="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="css-4ym8mv"
+    >
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+);
+const Dark = (
+    <svg
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        stroke="currentColor"
+        stroke-width="2"
+        fill="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="css-4ym8mv"
+    >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+);
+
 const NavBar = (props) => {
     const { theme, handleChangeTheme } = props;
 
@@ -20,7 +59,7 @@ const NavBar = (props) => {
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button
-                            className="p-1 text-gray-400 hover:text-gray-600 focus:outline-none"
+                            className="p-1 mr-2 text-gray-400 hover:text-gray-600 focus:outline-none"
                             title="Github"
                             onClick={() =>
                                 window.open(
@@ -36,7 +75,9 @@ const NavBar = (props) => {
                             title="Github"
                             onClick={handleChangeTheme}
                         >
-                            <span className="capitalize">Theme: {theme}</span>
+                            <span className="capitalize">
+                                {theme === 'light' ? Dark : Light}
+                            </span>
                         </button>
                     </div>
                 </div>
