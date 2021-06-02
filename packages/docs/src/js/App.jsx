@@ -5,6 +5,7 @@ import { lightTheme, darkTheme } from 'react-star-ui';
 import PageLoader from './components/PageLoader';
 import Routes from './routes/Routes';
 import { withAppConsumer } from './context/app.context';
+import { useThemeDetector } from './utilities/utilities';
 
 const THEMES = {
     LIGHT: 'light',
@@ -36,7 +37,7 @@ const App = (props) => {
         appContext: { state }
     } = props;
 
-    const [theme, setTheme] = React.useState(THEMES.LIGHT);
+    const [theme, setTheme] = React.useState(useThemeDetector());
 
     const selectedTheme = theme === THEMES.LIGHT ? lightTheme : darkTheme;
     const handleChangeTheme = (event) => {
