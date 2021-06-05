@@ -72,7 +72,7 @@ const NavBar = (props) => {
                         </button>
                         <button
                             className="p-1 text-gray-400 hover:text-gray-600 focus:outline-none"
-                            title="Github"
+                            title="Theme"
                             onClick={handleChangeTheme}
                         >
                             <span className="capitalize">
