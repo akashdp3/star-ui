@@ -33,7 +33,7 @@ yarn add react-star-ui
 Clone the repo
 
 ```
-git clone git@github.com:akashdsamantra/star-ui.git
+git clone git@github.com:akkssh/star-ui.git
 ```
 
 After that, run the below command in the root directory to install all dependencies across all packages
