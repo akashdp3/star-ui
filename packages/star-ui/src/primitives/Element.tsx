@@ -14,6 +14,10 @@ interface IElementProps {
     theme?: DefaultTheme | undefined;
 }
 
+const Component = Styled.div(({ css }) => ({
+    ...css
+}));
+
 const Element = (props: IElementProps) => {
     const {
         as: tag = 'div',
@@ -58,12 +62,13 @@ const Element = (props: IElementProps) => {
         }
     }
 
-    const element = () => React.createElement(tag, null, children);
-    const StyledElement = Styled(element)({
-        ...merge(css, componentStyles)
-    });
-
-    return React.createElement(StyledElement, props);
+    return (
+        <Component
+            {...props}
+            as={tag}
+            css={{ ...merge(css, componentStyles) }}
+        />
+    );
 };
 
 export default withTheme(Element);
